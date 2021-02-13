@@ -1,0 +1,146 @@
+body{
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+dd{
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+dl{
+    margin-bottom: 0px;
+}
+
+dt{
+    margin-bottom: 4px;
+    margin-top: 4px;
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    width: 100vw;
+}
+
+.about-heading{
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.about-image{
+    max-width: 75%;
+}
+
+.about-image-small{
+    max-width: 60%;
+}
+
+.about-me{
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.about-text{
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+.active{
+    border-radius: 10px;
+}
+
+.bio-text{
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card{
+    border-width: 2px;
+    margin-top: 15vh;
+}
+
+.card-header{
+    border-width: 2px;
+    text-align: center;
+}
+
+.icon{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.img-container{
+    padding-top: 15vh;
+}
+
+.nav-item{
+    padding-bottom: 2.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2.5px;
+}
+
+.nav-link{
+    font-weight: bold;
+}
+
+.shift-left{
+    margin-left: 0px;
+}
+
+.shift-right{
+    margin-right: 0px;
+}
+
+.shift-top{
+    bottom: 7.5vw;
+    position: relative;
+}
+
+.welcome{
+    height: 100vh;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.welcome-subtext{
+    font-weight: normal;
+    font-style: italic;
+}
+
+.welcome-text{
+    margin-top: 10px;
+}
+
+#card-small{
+    margin-top: 0px;
+}
+
+#home-image{
+    margin-top: 30vh;
+}
+
+#img-container-mid{
+    max-height: 55vw;
+    padding-top: 5vh;
+}
+
+#img-container-small{
+    max-height: 75vw;
+    padding-top: 5vh;
+}
+
+#img-small{
+    bottom: 20vw;
+    position: relative;
+}

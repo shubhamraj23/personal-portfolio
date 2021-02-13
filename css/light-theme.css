@@ -1,0 +1,65 @@
+body{
+    background-color: #aec5e0;
+}
+
+nav{
+    background-color: #779ecb;
+}
+
+.about-heading{
+    color: white;
+}
+
+.about-me{
+    background-color: #5284bd;
+}
+
+.about-text{
+    color: black;
+}
+
+.active{
+    background-color: #5284bd;
+}
+
+.bio-text{
+    color: white;
+}
+
+.card{
+    border-color: black;
+}
+
+.card-header{
+    background-color: #779ecb;
+    border-color: black;
+    color: white;
+}
+
+.fa-bars{
+    color: white;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: #4477b2;
+}
+
+.welcome{
+    background-color: #aec5e0;
+}
+
+.welcome-subtext{
+    color: black;
+}
+
+.welcome-text{
+    color: black;
+}
+
+#active-link:hover{
+    color: white;
+}
