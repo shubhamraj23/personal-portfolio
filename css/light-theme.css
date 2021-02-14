@@ -40,12 +40,52 @@ nav{
     color: white;
 }
 
+.footer{
+    background-color: #779ecb;
+}
+
+.footer-heading{
+    color: black;
+}
+
+.footer-link{
+    color: #4477b2;
+}
+
+.footer-text{
+    color: black;
+}
+
+.hobbies{
+    background-color: #4477b2;
+}
+
+.hobby-heading{
+    color: white;
+}
+
+.hobby-subheading{
+    color: white;
+}
+
 .nav-link{
     color: white;
 }
 
 .nav-link:hover{
     color: #4477b2;
+}
+
+.project-heading{
+    color: black;
+}
+
+.project-short-title{
+    color: black;
+}
+
+.projects{
+    background-color: #aec5e0;
 }
 
 .welcome{
@@ -62,4 +102,20 @@ nav{
 
 #active-link:hover{
     color: white;
+}
+
+#project-1{
+    background-color: #89abd2;
+}
+
+#project-2{
+    background-color: #779ecb;
+}
+
+#project-3{
+    background-color: #6591c4;
+}
+
+#project-4{
+    background-color: #5284bd;
 }
