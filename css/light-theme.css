@@ -2,6 +2,10 @@ body{
     background-color: #aec5e0;
 }
 
+hr{
+    border-color: white;
+}
+
 nav{
     background-color: #779ecb;
 }
@@ -22,8 +26,58 @@ nav{
     background-color: #5284bd;
 }
 
+.bio-fact-description{
+    color: #fdff00;
+}
+
+.bio-fact-heading{
+    color: white;
+}
+
+.bio-graduation{
+    background-color: #2f527b;
+    border-color: white;
+}
+
+.bio-graduation-heading{
+    color: white;
+}
+
+.bio-quick-facts{
+    background-color: #4477b2;
+    border-color: white;
+}
+
+.bio-quote-speaker{
+    color: white;
+}
+
+.bio-quotes-divider{
+    border-color: white;
+}
+
+.bio-quotes-heading{
+    color: white;
+}
+
+.bio-side-heading{
+    color: #fdff00;
+}
+
+.bio-side-tab{
+    background-color: #8abed2;
+}
+
 .bio-text{
     color: white;
+}
+
+.bio-title{
+    color: black;
+}
+
+.bio-title-text{
+    color: black;
 }
 
 .card{
@@ -49,7 +103,7 @@ nav{
 }
 
 .footer-link{
-    color: #4477b2;
+    color: white;   
 }
 
 .footer-text{
@@ -102,6 +156,14 @@ nav{
 
 #active-link:hover{
     color: white;
+}
+
+#bio-card-body{
+    background-color: #4477b2;
+}
+
+#graduation-large{
+    background-color: #aec5e0;
 }
 
 #project-1{

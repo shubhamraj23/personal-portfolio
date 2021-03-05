@@ -18,6 +18,11 @@ dt{
     text-align: center;
 }
 
+hr{
+    border-top: dotted;
+    border-width: 3px;
+}
+
 img{
     display: block;
     margin-left: auto;
@@ -57,11 +62,106 @@ nav{
     border-radius: 10px;
 }
 
+.bio-fact-description{
+    font-style: italic;
+    margin-bottom: 13px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.bio-fact-heading{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.bio-graduation{
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 5vh;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-top: 5vh;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.bio-graduation-heading{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.bio-graduation-image{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.bio-main-text{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.bio-main-title{
+    text-align: center;
+}
+
+.bio-quick-facts{
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.bio-quote{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.bio-quote-speaker{
+    font-weight: normal;
+    text-align: right;
+}
+
+.bio-quotes-divider{
+    border-top: solid;
+    border-width: 2px;
+    width: 85%;
+}
+
+.bio-quotes-heading{
+    text-align: center;
+}
+
+.bio-quotes-small{
+    margin-bottom: 25px;
+    margin-top: 5vh;
+}
+
+.bio-side-heading{
+    font-family: sans-serif;
+    text-align: center;
+}
+
 .bio-text{
     font-style: italic;
     font-weight: bold;
     margin-top: 10px;
     text-align: center;
+}
+
+.bio-title{
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bio-title-text{
+    font-weight: bold;
 }
 
 .card{
@@ -75,8 +175,8 @@ nav{
 }
 
 .footer{
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
 
 .footer-bullets{
@@ -92,6 +192,10 @@ nav{
 
 .footer-link{
     font-weight: bold;
+}
+
+.footer-link:hover{
+    text-decoration: none;
 }
 
 .footer-text{
@@ -190,8 +294,43 @@ nav{
     margin-top: 10px;
 }
 
+#bio-card{
+    margin-top: 5vh;
+}
+
+#bio-card-body{
+    text-align: left;
+}
+
+#bio-image{
+    margin-bottom: 15vh;
+    margin-top: 25vh;
+}
+
+#bio-image-small{
+    margin-bottom: 5vh;
+    margin-top: 20vh;
+}
+
+#bio-side{
+    margin-bottom: 15vh;
+}
+
+#bio-title-large{
+    margin-bottom: 2.5vh;
+    margin-top: 10vh;
+}
+
 #card-small{
     margin-top: 0px;
+}
+
+#graduation-large{
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 #home-image{
