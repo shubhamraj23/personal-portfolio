@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required Meta Tags For Responsiveness -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Linking the required stylesheets -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/layout.css">
+        <link rel="stylesheet" type="text/css" href="../css/light-theme.css">
+        
+        <!-- Adding the title and the icon -->
+        <title>My Personal Portfolio</title>
+        <link rel="icon" href="../images/home-image.jpg" type="image/x-icon">
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar fixed-top navbar-expand-md">
+            <div class="container mx-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="fa fa-bars"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#" id="active-link">Bio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="bio">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 d-none d-md-block bio-side-tab">
+                        <div class="row">
+                            <div class="col-6 mx-auto">
+                                <img src="../images/home-image.jpg" class="img-fluid img-thumbnail" id="bio-image" alt="My Biography">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-9 mx-auto bio-quick-facts" id="bio-side">
+                                <h3 class="bio-side-heading">Quick Facts</h3>
+                                <hr/>
+                                
+                                <dt class="bio-fact-heading">NAME</dt>
+                                <dd class="bio-fact-description">Shubham Raj Pandit</dd>
+                                
+                                <dt class="bio-fact-heading">BIRTH DATE</dt>
+                                <dd class="bio-fact-description">December 23, 1998</dd>
+                                
+                                <dt class="bio-fact-heading">PLACE OF BIRTH</dt>
+                                <dd class="bio-fact-description">Patna, Bihar</dd>
+                                
+                                <dt class="bio-fact-heading">CURRENT LOCATION</dt>
+                                <dd class="bio-fact-description">Bangalore, India</dd>
+                                
+                                <dt class="bio-fact-heading">Favorite Sport</dt>
+                                <dd class="bio-fact-description">Squash</dd>
+                                
+                                <dt class="bio-fact-heading">Favorite Song</dt>
+                                <dd class="bio-fact-description">Love Story by Taylor Swift</dd>
+                            </div>    
+                        </div>
+
+                        <div class="row">
+                            <div class="col-10 mx-auto" id="bio-side">
+                                <div class="card" id="bio-card">
+                                    <h3 class="card-header">Skills</h3>
+                                    <div class="card-body" id="bio-card-body">
+                                        <dt class="bio-fact-heading">WEB DEVELOPMENT</dt>
+                                        <dd class="bio-fact-description">HTML, CSS, Javascript, Bootstrap</dd>
+                                        
+                                        <dt class="bio-fact-heading">PROGRAMMING LANGUAGES</dt>
+                                        <dd class="bio-fact-description">C, C++, Python, Matlab</dd>
+
+                                        <dt class="bio-fact-heading">PYTHON LIBRARIES</dt>
+                                        <dd class="bio-fact-description">Numpy, Pandas, scikit-learn</dd>
+
+                                        <dt class="bio-fact-heading">SOFTWARES</dt>
+                                        <dd class="bio-fact-description">
+                                            MS Word, MS Excel, Adobe Photoshop, Matlab and Simulink, SolidWorks, Aspen Plus
+                                        </dd>
+
+                                        <dt class="bio-fact-heading">OTHER TOOLS</dt>
+                                        <dd class="bio-fact-description">
+                                            Git and Github, SQL and BigQuery, Google Data Studio
+                                        </dd>
+
+                                        <dt class="bio-fact-heading">NON-TECHNICAL SKILLS</dt>
+                                        <dd class="bio-fact-description">Leadership, Team Management</dd>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+
+                        <div class="row d-md-block d-lg-none">
+                            <div class="col-11 mx-auto bio-graduation" id="bio-side">
+                                <h3 class="bio-graduation-heading">Graduation</h3>
+                                <div class="col-11 mx-auto bio-graduation-image">
+                                    <img src="../images/silver-medal.jpg" class="img-fluid img-thumbnail" alt="Silver Medal">
+                                    <h5 class="bio-graduation-heading">Silver Medal</h5>
+                                </div>
+                                <div class="col-11 mx-auto bio-graduation-image">
+                                    <img src="../images/graduation.jpg" class="img-fluid img-thumbnail" alt="Graduation">
+                                    <h5 class="bio-graduation-heading">Degree</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mx-auto">
+                            <div class="col-12 bio-quotes-heading">
+                                <h3>FAVOURITE QUOTES</h3>
+                            </div>
+                            <hr class="bio-quotes-divider">
+
+                            <div class="col-10 mx-auto">
+                                <h6 class="bio-quote">
+                                    "You can't connect the dots looking forward; you can only connect them looking backwards. 
+                                    So you have to trust that the dots will somehow connect in your future."
+                                </h6>
+                                <h6 class="bio-quote-speaker">
+                                    &#8212 Steve Jobs
+                                </h6>
+                            </div>
+                            <hr class="bio-quotes-divider">
+
+                            <div class="col-10 mx-auto">
+                                <h6 class="bio-quote">
+                                    "Do not allow your fire to go out, spark by irreplaceable sparkin the hopeless swamps of 
+                                    the not-quite, the not-yet and the not at all. Do not let the hero in your soul perish in 
+                                    lonely frustration for the life you deserved and have never been able to reach. The world you 
+                                    desire can be won. It exists. It is real. It is possible. It is yours."  
+                                </h6>
+                                <h6 class="bio-quote-speaker">
+                                    &#8212 Ayn Rand
+                                </h6>
+                            </div>
+                            <hr class="bio-quotes-divider">
+
+                            <div class="col-10 mx-auto">
+                                <h6 class="bio-quote">
+                                    "It is our choices that show what we truly are, far more than our abilities."  
+                                </h6>
+                                <h6 class="bio-quote-speaker">
+                                    &#8212 Albus Dumbledore
+                                </h6>
+                            </div>
+                            <hr class="bio-quotes-divider">
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-block d-md-none">
+                        <div class="row">
+                            <div class="col-6 col-sm-4 mx-auto">
+                                <img src="../images/home-image.jpg" class="img-fluid img-thumbnail" id="bio-image-small" alt="My Biography">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="bio-title">MY BIOGRAPHY</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-8">
+                        <div class="d-none d-md-block">
+                            <h2 class="bio-title" id="bio-title-large">MY BIOGRAPHY</h2>
+                        </div>
+
+                        <div class="bio-main-title">
+                            <h5 class="bio-title-text">EARLY LIFE</h5>
+                        </div>
+                        <div class="bio-main-text">
+                            <p class="col-12 col-lg-10 mx-auto">
+                                I was born on 23<sup>rd</sup> December, 1998 in the city of Patna, Bihar. A good 
+                                part of my very early childhood was spent in Patna, where I lived for close to 4 
+                                years and was brought up by my maternal family. I had spent a good amount of time 
+                                with my maternal grandparents and uncles in my childhood. That was the first of the 
+                                9 cities across 6 states where I had lived within the first 20 years of my life.
+                            </p>
+                        </div>
+
+                        <div class="row mx-auto">
+                            <div class="col-12 mx-auto bio-graduation" id="graduation-large">
+                                <div class="row mx-auto">
+                                    <div class="col-12 col-sm-8 col-md-12 col-lg-6 mx-auto bio-graduation-image">
+                                        <img src="../images/Old-2.jpg" class="img-fluid img-thumbnail" alt="Raigarh Days 1">
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-12 col-lg-6 mx-auto bio-graduation-image">
+                                        <img src="../images/Old-1.jpg" class="img-fluid img-thumbnail" alt="Raigarh Days 2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="col-12 col-lg-10 mx-auto">
+                                After moving through various cities and states, I moved to Raigarh, a small town in 
+                                the state of Chhattisgarh in the year 2006. That was the place where I spent nearly 
+                                half of my childhood. I was admitted to O.P. Jindal School in class 3<sup>rd</sup>; 
+                                and it was the place that helped me discover all the hidden potential that I possessed.
+                                This place is naturally very close to my heart, and the closest of my friends today are 
+                                the ones I had made there. I studied there until class 10<sup>th</sup>, post which I 
+                                moved to Hyderabad for higher studies and coaching. As a result of two years of dedication 
+                                and hard work, I cleared JEE Advanced with an All India Rank of 3191. I joined IIT 
+                                Kharagpur and started pursuing my B.Tech. in Aerospace Engineering.
+                            </p>
+                        </div>
+
+                        <div class="col-10 mx-auto bio-quick-facts d-block d-md-none">
+                            <h3 class="bio-side-heading">Quick Facts</h3>
+                            <hr/>
+                            <dt class="bio-fact-heading">CURRENT LOCATION</dt>
+                            <dd class="bio-fact-description">Bangalore, India</dd>
+                            <dt class="bio-fact-heading">Favorite Sport</dt>
+                            <dd class="bio-fact-description">Squash</dd>
+                            <dt class="bio-fact-heading">Favorite Song</dt>
+                            <dd class="bio-fact-description">Love Story by Taylor Swift</dd>
+                        </div>
+
+                        <div class="bio-main-title">
+                            <h5 class="bio-title-text">KGP DIARIES</h5>
+                        </div>
+                        <div class="bio-main-text">
+                            <p class="col-12 col-lg-10 mx-auto">
+                                I joined IIT Kharagpur in 2016 as an undergraduate student in the Department of Aerospace 
+                                Engineering. However, at the end of my first year, I had changed my branch to Chemical
+                                Engineering. If Raigarh was the place where I had discovered my potential, KGP was the 
+                                place that helped me develop it further. Over my four years of stay there, I participated 
+                                in various co-curricular activities, competitions and was a part of a few startups as 
+                                well. The first two years of my stay there were all about exploring the 
+                                opportunities present over there. I tried my luck in robotics, publicity and marketing. 
+                                I was a part of two startups as well, one in each year of stay there. All the experiences 
+                                there taught me various essential non-technical skills such as quick decision making as 
+                                well as time management.
+                            </p>
+                        </div>
+
+                        <div class="row mx-auto">
+                            <div class="col-12 mx-auto bio-graduation" id="graduation-large">
+                                <div class="row mx-auto">
+                                    <div class="col-12 col-sm-8 col-md-12 col-lg-6 mx-auto bio-graduation-image">
+                                        <img src="../images/KGP-1.jpg" class="img-fluid img-thumbnail" alt="KGP Days 1">
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-12 col-lg-6 mx-auto bio-graduation-image">
+                                        <img src="../images/KGP-2.jpg" class="img-fluid img-thumbnail" alt="KGP Days 2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="col-12 col-lg-10 mx-auto">
+                                It was at the start of my third year that I started to finalise on my areas of interest. 
+                                A big failure early on during the internsip period helped me realise my shortcomings and 
+                                I started working on improving my technical skillset. It was at that moment when I found 
+                                an interest in programming and software development. I also tried learning a bit of data science.
+                                Over time, I improved my programming skills and secured a summer internship with Itiviti 
+                                India Private Limited as a software intern. I improved my skills further and ended up with 
+                                a placement offer from Jaguar Land Rover for the position of Graduate Software Engineer 
+                                Trainee during the on campus placements in Decemeber 2019.
+                            </p>
+                        </div>
+
+                        <div class="row mx-auto">
+                            <div class="col-12 mx-auto bio-graduation" id="graduation-large">
+                                <div class="row mx-auto">
+                                    <div class="col-12 col-sm-8 col-md-12 col-lg-6 mx-auto bio-graduation-image d-block d-md-none d-lg-block">
+                                        <img src="../images/KGP-3.jpg" class="img-fluid img-thumbnail" alt="KGP Days 3">
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-12 col-lg-6 mx-auto bio-graduation-image">
+                                        <img src="../images/KGP-4.jpg" class="img-fluid img-thumbnail" alt="KGP Days 4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="col-12 col-lg-10 mx-auto">
+                                I graduated from IIT Kharagpur in June 2020. Although I hadn't demonstrated any significant 
+                                interest in my core discipline, Chemical Engineering; I was serious towards my studies and 
+                                was presented with the prestigious silver medal for having the highest CGPA among the 
+                                successfully graduating candidates in my branch.
+                            </p>                            
+                        </div>
+
+                        <div class="row mx-auto d-block d-md-none">
+                            <div class="col-11 mx-auto bio-graduation">
+                                <h3 class="bio-graduation-heading">Graduation</h3>
+                                <div class="col-11 mx-auto bio-graduation-image">
+                                    <img src="../images/silver-medal.jpg" class="img-fluid img-thumbnail" alt="Silver Medal">
+                                    <h5 class="bio-graduation-heading">Silver Medal</h5>
+                                </div>
+                                <div class="col-11 mx-auto bio-graduation-image">
+                                    <img src="../images/graduation.jpg" class="img-fluid img-thumbnail" alt="Graduation">
+                                    <h5 class="bio-graduation-heading">Degree</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mx-auto d-none d-lg-block">
+                            <div class="col-12 mx-auto bio-graduation" id="graduation-large">
+                                <div class="row mx-auto">
+                                    <div class="col-6 bio-graduation-image">
+                                        <img src="../images/silver-medal.jpg" class="img-fluid img-thumbnail" alt="Silver Medal">
+                                    </div>
+                                    <div class="col-6 bio-graduation-image">
+                                        <img src="../images/graduation.jpg" class="img-fluid img-thumbnail" alt="Graduation">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bio-main-title">
+                            <h5 class="bio-title-text">CURRENTLY</h5>
+                        </div>
+                        <div class="bio-main-text">
+                            <p class="col-12 col-lg-10 mx-auto">
+                                I joined Jaguar Land Rover as a full-time employee in September 2020 virtually and have been 
+                                working there as a Graduate Software Engineer Trainee since then.
+                            </p>
+                        </div>
+
+                        <div class="row d-block d-md-none">
+                            <div class="col-10 mx-auto">
+                                <div class="card" id="bio-card">
+                                    <h3 class="card-header">Skills</h3>
+                                    <div class="card-body" id="bio-card-body">
+                                        <dt class="bio-fact-heading" id="bio-card-body">WEB DEVELOPMENT</dt>
+                                        <dd class="bio-fact-description" id="bio-card-body">HTML, CSS, Javascript, Bootstrap</dd>
+                                        
+                                        <dt class="bio-fact-heading" id="bio-card-body">PROGRAMMING LANGUAGES</dt>
+                                        <dd class="bio-fact-description" id="bio-card-body">C, C++, Python, Matlab</dd>
+
+                                        <dt class="bio-fact-heading" id="bio-card-body">PYTHON LIBRARIES</dt>
+                                        <dd class="bio-fact-description" id="bio-card-body">Numpy, Pandas, scikit-learn</dd>
+
+                                        <dt class="bio-fact-heading" id="bio-card-body">SOFTWARES</dt>
+                                        <dd class="bio-fact-description" id="bio-card-body">
+                                            MS Word, MS Excel, Adobe Photoshop, Matlab and Simulink, SolidWorks, Aspen Plus
+                                        </dd>
+
+                                        <dt class="bio-fact-heading" id="bio-card-body">OTHER TOOLS</dt>
+                                        <dd class="bio-fact-description" id="bio-card-body">
+                                            Git and Github, SQL and BigQuery, Google Data Studio
+                                        </dd>
+
+                                        <dt class="bio-fact-heading" id="bio-card-body">NON-TECHNICAL SKILLS</dt>
+                                        <dd class="bio-fact-description" id="bio-card-body">Leadership, Team Management</dd>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+
+                        <div class="row mx-auto d-block d-md-none bio-quotes-small">
+                            <div class="col-12 bio-quotes-heading">
+                                <h3>FAVOURITE QUOTES</h3>
+                            </div>
+                            <hr class="bio-quotes-divider">
+
+                            <div class="col-10 mx-auto">
+                                <h6 class="bio-quote">
+                                    "You can't connect the dots looking forward; you can only connect them looking backwards. 
+                                    So you have to trust that the dots will somehow connect in your future."
+                                </h6>
+                                <h6 class="bio-quote-speaker">
+                                    &#8212 Steve Jobs
+                                </h6>
+                            </div>
+                            <hr class="bio-quotes-divider">
+
+                            <div class="col-10 mx-auto">
+                                <h6 class="bio-quote">
+                                    "Do not allow your fire to go out, spark by irreplaceable sparkin the hopeless swamps of 
+                                    the not-quite, the not-yet and the not at all. Do not let the hero in your soul perish in 
+                                    lonely frustration for the life you deserved and have never been able to reach. The world you 
+                                    desire can be won. It exists. It is real. It is possible. It is yours."  
+                                </h6>
+                                <h6 class="bio-quote-speaker">
+                                    &#8212 Ayn Rand
+                                </h6>
+                            </div>
+                            <hr class="bio-quotes-divider">
+
+                            <div class="col-10 mx-auto">
+                                <h6 class="bio-quote">
+                                    "It is our choices that show what we truly are, far more than our abilities."  
+                                </h6>
+                                <h6 class="bio-quote-speaker">
+                                    &#8212 Albus Dumbledore
+                                </h6>
+                            </div>
+                            <hr class="bio-quotes-divider">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-sm-6">
+                        <h5 class="footer-heading">Links</h5>
+                        <ul class="footer-bullets">
+                            <li><a href="home.html"  class="footer-link">Home</a></li>
+                            <li><a href="projects.html" class="footer-link">Projects</a></li>
+                            <li><a href="hobbies.html" class="footer-link">Hobbies</a></li>
+                            <li><a href="contact.html" class="footer-link">Leave a Review</a></li>
+                        </ul>    
+                    </div>
+
+                    <div class="col-8 col-sm-6">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="footer-heading">Contact</h5>
+                            </div>
+                            
+                            <div class="col-8 col-sm-2">
+                                <i class="fas fa-map-marker-alt icon"></i>
+                            </div>
+                            
+                            <div class="col-12 col-sm-10">
+                                <h6 class="footer-text">
+                                    Room No. D-121 <br>
+                                    RK Hall of Residence <br>
+                                    IIT Kharagpur <br>
+                                </h6>
+                            </div>
+
+                            <div class="col-8 col-sm-2">
+                                <i class="fas fa-envelope icon"></i>
+                            </div>
+                            
+                            <div class="col-12 col-sm-10">
+                                <h6 class="footer-text">
+                                    shubhamraj465@gmail.com
+                                </h6>
+                            </div>
+                            
+                            <div class="col-8 col-sm-2">
+                                <i class="fas fa-phone-alt icon"></i>
+                            </div>
+                            
+                            <div class="col-12 col-sm-10">
+                                <h6 class="footer-text">
+                                    +91-7674045435
+                                </h6>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Linking the required javascript files -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
