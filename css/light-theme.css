@@ -94,6 +94,45 @@ nav{
     color: white;
 }
 
+.feedback{
+    background-color: #4477b2;
+    border-color: black;
+}
+
+.feedback-form-divider{
+    border-color: white;
+}
+
+.feedback-form-heading{
+    background-color: #284669;
+    color: white;
+}
+
+.feedback-stats-number{
+    color: #0000FF;
+}
+
+.feedback-stats-subheading{
+    color: black;
+}
+
+.form-control{
+    background-color: #aec5e0;
+}
+
+.form-radio-text{
+    color: white;
+}
+
+.form-submit-button{
+    background-color: #77DD77;
+    color: white;
+}
+
+.form-text{
+    color: white;
+}
+
 .footer{
     background-color: #779ecb;
 }
