@@ -221,6 +221,18 @@ nav{
     background-color: #aec5e0;
 }
 
+#hobby-painting{
+    background-color: #6591c4;
+}
+
+#hobby-reading{
+    background-color: #5284bd;
+}
+
+#hobby-squash{
+    background-color: #89abd2;
+}
+
 #project-1{
     background-color: #89abd2;
 }
@@ -235,16 +247,4 @@ nav{
 
 #project-4{
     background-color: #5284bd;
-}
-
-#hobby-painting{
-    background-color: #6591c4;
-}
-
-#hobby-reading{
-    background-color: #5284bd;
-}
-
-#hobby-squash{
-    background-color: #89abd2;
 }

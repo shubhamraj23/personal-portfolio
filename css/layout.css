@@ -336,7 +336,10 @@ nav{
 }
 
 .hobby-reading-points{
-    margin-bottom: 0px;
+    font-family: "Times New Roman", Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 3px;
 }
 
 .hobby-reading-subheading{
@@ -458,14 +461,6 @@ nav{
     text-align: center;
 }
 
-#bio-card{
-    margin-top: 5vh;
-}
-
-#bio-card-body{
-    text-align: left;
-}
-
 #bio-image{
     margin-bottom: 15vh;
     margin-top: 25vh;
@@ -576,9 +571,8 @@ nav{
     max-width: min(45vh, 65%);
 }
 
-#hobby-painting-subheading-bottom{
+#hobby-painting-subheading-top{
     margin-bottom: 0px;
-    padding-bottom: 2.5vw;
 }
 
 #home-image{
