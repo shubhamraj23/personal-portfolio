@@ -26,6 +26,10 @@ nav{
     background-color: #5284bd;
 }
 
+.alert-message{
+    color: #ff6961;
+}
+
 .bio-fact-description{
     color: #fdff00;
 }

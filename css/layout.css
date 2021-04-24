@@ -62,6 +62,12 @@ nav{
     border-radius: 10px;
 }
 
+.alert-message{
+    font-size: smaller;
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+
 .bio-fact-description{
     font-style: italic;
     margin-bottom: 13px;
@@ -174,8 +180,11 @@ nav{
     text-align: center;
 }
 
-.carousel-item{
+.carousel{
     margin-top: 45px;
+}
+
+.carousel-item{
     height: 50vh;
 }
 
@@ -492,6 +501,24 @@ nav{
 #feedback-row{
     margin-left: 0px;
     margin-right: 0px;
+}
+
+#form-validate{
+    display: none;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#form-validation-email{
+    display: none;
+}
+
+#form-validation-name{
+    display: none;
+}
+
+#form-verify-email{
+    display: none;
 }
 
 #graduation-large{
