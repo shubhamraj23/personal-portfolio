@@ -73,6 +73,10 @@
                                             </label>
                                             <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
                                         </div>
+
+                                        <div class="alert-message" id="form-validation-name">
+                                            <h6>* Please enter your name</h6>
+                                        </div>
                                         <hr class="feedback-form-divider">
         
                                         <div class="form-group">
@@ -80,6 +84,13 @@
                                                 <span class="form-text">Email id:</span>
                                             </label>
                                             <input type="email" class="form-control" id="email" placeholder="Enter Your Email id">
+                                        </div>
+
+                                        <div class="alert-message" id="form-validation-email">
+                                            <h6>* Please enter your email id</h6>
+                                        </div>
+                                        <div class="alert-message" id="form-verify-email">
+                                            <h6>* Please enter a valid email id</h6>
                                         </div>
                                         <hr class="feedback-form-divider">
 
@@ -178,7 +189,11 @@
                                         </div>
                 
                                         <div class="form-group">
-                                            <button type="submit" id="submit" class="form-submit-button" title="Submit Your Feedback">Submit</button>
+                                            <button type="submit" id="submit" class="form-submit-button" title="Submit Your Feedback" onclick="return validateForm()">Submit</button>
+                                        </div>
+
+                                        <div class="alert-message" id="form-validate">
+                                            <h6>* Please fill in the mandatory details correctly</h6>
                                         </div>
                                     </form>
                                 </div>
@@ -253,5 +268,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="../javascript/formValidation.js"></script>
     </body>
 </html>
