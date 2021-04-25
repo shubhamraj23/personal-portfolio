@@ -197,6 +197,22 @@ nav{
     color: black;
 }
 
+.project-tab-link{
+    color: white;
+}
+
+.project-link-active{
+    color: black;
+}
+
+.project-tab-link:focus{
+    border-color: white;
+}
+
+.project-tab-link:hover{
+    color: black;
+}
+
 .projects{
     background-color: #aec5e0;
 }
@@ -251,4 +267,20 @@ nav{
 
 #project-4{
     background-color: #5284bd;
+}
+
+#project-automation{
+    background-color: #89abd2;
+}
+
+#project-cds{
+    background-color: #6591c4;
+}
+
+#project-dwc{
+    background-color: #5284bd;
+}
+
+#project-testing{
+    background-color: #9cb8d9;
 }
