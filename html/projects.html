@@ -37,7 +37,7 @@
             </div>
         </nav>
 
-        <!-- Main Content -->
+        <!-- Carousel -->
         <div class="carousel slide" data-ride="carousel" id="project-carousel">
             <ol class="carousel-indicators">
                 <li data-target="#project-carousel" data-slide-to="0" class="active"></li>
@@ -49,13 +49,13 @@
             <div class="carousel-inner">
                 <div class="carousel-item active" id="project-1">
                     <div class="carousel-caption d-block d-lg-none">
-                        <img src="../images/project-market-research.png" class="img-fluid" id="project-image-small">
-                        <h4>Market analysis of bus operators over a fixed bus route</h4>
+                        <img src="../images/project-testing.png" class="img-fluid" id="project-image-small">
+                        <h4>Automation of test cases for a web application</h4>
                     </div>
 
                     <div class="carousel-caption d-none d-lg-block">
-                        <img src="../images/project-market-research.png" class="img-fluid" id="project-image-large">
-                        <h3>Market analysis of bus operators over a fixed bus route</h3>
+                        <img src="../images/project-testing.png" class="img-fluid" id="project-image-large">
+                        <h3>Automation of test cases for a web application</h3>
                     </div>
                 </div>
 
@@ -105,6 +105,65 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+
+        <div class="project-header">
+            <p class="project-header-text">
+                Click on the tabs below to view full details
+            </p>
+        </div>
+
+        <!-- Tabs for large screen -->
+        <div class="container-fluid" id="project-container">
+            <div class="d-none d-lg-block">
+                <div class="project-tab-large">
+                    <div class="row py-auto" id="feedback-row">
+                        <div class="col-3" id="project-tabs">
+                            <button class="project-tab-link" id="project-1" onclick="switchTabs(event, 'testing')">
+                                Automation of test cases for a web application
+                            </button>
+                        </div>
+
+                        <div class="col-3" id="project-tabs">
+                            <button class="project-tab-link" id="project-2" onclick="switchTabs(event, 'automation')">
+                                Automation of daily checks for a package
+                            </button>
+                        </div>
+
+                        <div class="col-3" id="project-tabs">
+                            <button class="project-tab-link" id="project-3" onclick="switchTabs(event, 'cds')">
+                                Dynamics and optimization of conventional distillation columns
+                            </button>
+                        </div>
+
+                        <div class="col-3" id="project-tabs">
+                            <button class="project-tab-link" id="project-4" onclick="switchTabs(event, 'dwc')">
+                                Multi-objective optimization of dividing wall columns
+                            </button>
+                        </div>
+                    </div>   
+                </div>
+
+                <!-- Tab Content -->
+                <div class="project-tab-content" id="project-testing">
+                    
+                </div>
+
+                <div class="project-tab-content" id="project-automation">
+
+                </div>
+
+                <div class="project-tab-content" id="project-cds">
+
+                </div>
+
+                <div class="project-tab-content" id="project-dwc">
+
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Tabs for small screen -->
 
         <!-- Footer -->
         <div class="footer">
@@ -169,5 +228,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="../javascript/alignment.js"></script>
+        <script src="../javascript/tabSwitch.js"></script>
     </body>
 </html>
