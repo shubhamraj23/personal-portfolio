@@ -189,6 +189,15 @@ nav{
     color: #4477b2;
 }
 
+.project-description-heading{
+    color: white;
+}
+
+.project-header{
+    background-color: #779ecb;
+    color: white;
+}
+
 .project-heading{
     color: black;
 }
@@ -201,15 +210,23 @@ nav{
     color: white;
 }
 
+.project-tab-link-small{
+    color: white;
+}
+
+.project-tabs-heading{
+    color: black;
+}
+
 .project-link-active{
     color: black;
 }
 
-.project-tab-link:focus{
-    border-color: white;
+.project-tab-link:hover{
+    color: black;
 }
 
-.project-tab-link:hover{
+.project-tab-link-small:hover{
     color: black;
 }
 
@@ -270,17 +287,49 @@ nav{
 }
 
 #project-automation{
-    background-color: #89abd2;
+    background-color: #aec5e0;
+}
+
+#project-automation-copy{
+    background-color: #aec5e0;
+}
+
+#project-automation-small{
+    background-color: #aec5e0;
 }
 
 #project-cds{
-    background-color: #6591c4;
+    background-color: #9bb8d9;
+}
+
+#project-cds-copy{
+    background-color: #9bb8d9;
+}
+
+#project-cds-small{
+    background-color: #9bb8d9;
 }
 
 #project-dwc{
-    background-color: #5284bd;
+    background-color: #89abd2;
+}
+
+#project-dwc-copy{
+    background-color: #89abd2;
+}
+
+#project-dwc-small{
+    background-color: #89abd2;
 }
 
 #project-testing{
-    background-color: #9cb8d9;
+    background-color: #c0d2e7;
+}
+
+#project-testing-copy{
+    background-color: #c0d2e7;
+}
+
+#project-testing-small{
+    background-color: #c0d2e7;
 }

@@ -5,6 +5,7 @@ function alignNav(){
     carousel.style.marginTop = height + "px";
 
     var tab = document.getElementsByClassName("project-tab-large")[0];
-    tab.style.top = height + "px";
+    var offsetHeight = height - 2;
+    tab.style.top = offsetHeight + "px";
     return true;
 }

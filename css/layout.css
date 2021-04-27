@@ -420,10 +420,52 @@ nav{
     font-weight: bold;
 }
 
-.project-header{
+.project-content-header{
+    font-family: "Times New Roman", Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.project-description-block{
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.project-description-block-small{
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+.project-description-content{
+    display: block;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.project-description-heading{
+    display: block;
     font-family: "Times New Roman", Arial, sans-serif;
     margin-bottom: 5px;
-    margin-top: 5px;
+    text-align: left;
+}
+
+.project-description-heading-larger{
+    display: inline;
+}
+
+.project-description-heading-smaller{
+    display: inline;
+    position: relative;
+    right: 2.5px;
+}
+
+.project-header{
+    font-family: "Times New Roman", Arial, sans-serif;
+    padding-bottom: 5px;
+    padding-top: 5px;
     text-align: center;
 }
 
@@ -433,6 +475,12 @@ nav{
 
 .project-heading{
     text-align: center;
+}
+
+.project-learnings{
+    padding-left: 20px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .project-short-title{
@@ -455,10 +503,15 @@ nav{
     display: none;
 }
 
+.project-tab-content-small{
+    display: none;
+}
+
 .project-tab-large{
     position: -webkit-sticky;
     position: sticky;
     top: 40px;
+    z-index: 10;
 }
 
 .project-tab-link{
@@ -473,10 +526,35 @@ nav{
     width: 100%;
 }
 
+.project-tab-link-small{
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: left;
+    transition: 0.5s;
+    width: 100%;
+}
+
 .project-tab-link:focus{
+    border: none;
     outline: none;
-    border: solid;
-    border-width: 2px;
+}
+
+.project-tab-link-small:focus{
+    border: none;
+    outline: none;
+}
+
+.project-tabs-heading{
+    font-family: "Times New Roman", Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 25px;
+    text-align: left;
 }
 
 .projects{
@@ -670,6 +748,14 @@ nav{
     padding-right: 0px;
 }
 
+#project-content-bottom{
+    margin-bottom: 0px;
+}
+
+#project-content-top{
+    margin-top: 0px;
+}
+
 #project-image-large{
     margin-bottom: 10px;
     max-height: 225px;
@@ -678,6 +764,16 @@ nav{
 #project-image-small{
     margin-bottom: 5px;
     max-height: 150px;
+}
+
+#project-table-content{
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#project-table-small{
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 #project-tabs{
