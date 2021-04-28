@@ -477,6 +477,10 @@ nav{
     text-align: center;
 }
 
+.project-heading-display{
+    display: inline-block;
+}
+
 .project-learnings{
     padding-left: 20px;
     text-align: justify;
@@ -771,7 +775,12 @@ nav{
     text-align: center;
 }
 
+#project-table-overflow{
+    overflow-x: scroll;
+}
+
 #project-table-small{
+    overflow-x: scroll;
     padding-left: 0px;
     padding-right: 0px;
 }
