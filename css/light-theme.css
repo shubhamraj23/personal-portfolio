@@ -202,6 +202,14 @@ nav{
     color: black;
 }
 
+.project-icon-minus{
+    color: white;
+}
+
+.project-icon-plus{
+    color: black;
+}
+
 .project-short-title{
     color: black;
 }
@@ -294,6 +302,14 @@ nav{
     background-color: #aec5e0;
 }
 
+#project-automation-copy-large{
+    background-color: #aec5e0;
+}
+
+#project-automation-copy-small{
+    background-color: #aec5e0;
+}
+
 #project-automation-small{
     background-color: #aec5e0;
 }
@@ -303,6 +319,14 @@ nav{
 }
 
 #project-cds-copy{
+    background-color: #9bb8d9;
+}
+
+#project-cds-copy-large{
+    background-color: #9bb8d9;
+}
+
+#project-cds-copy-small{
     background-color: #9bb8d9;
 }
 
@@ -318,6 +342,14 @@ nav{
     background-color: #89abd2;
 }
 
+#project-dwc-copy-large{
+    background-color: #89abd2;
+}
+
+#project-dwc-copy-small{
+    background-color: #89abd2;
+}
+
 #project-dwc-small{
     background-color: #89abd2;
 }
@@ -327,6 +359,14 @@ nav{
 }
 
 #project-testing-copy{
+    background-color: #c0d2e7;
+}
+
+#project-testing-copy-large{
+    background-color: #c0d2e7;
+}
+
+#project-testing-copy-small{
     background-color: #c0d2e7;
 }
 

@@ -47,7 +47,7 @@
             </ol>
 
             <div class="carousel-inner">
-                <div class="carousel-item active" id="project-testing-copy">
+                <div class="carousel-item active" id="project-testing-copy" onclick="openTabFromCarousel('testing')">
                     <div class="carousel-caption d-block d-lg-none">
                         <img src="../images/project-testing.png" class="img-fluid" id="project-image-small">
                         <h4>Automation of test cases for a web application</h4>
@@ -59,7 +59,7 @@
                     </div>
                 </div>
 
-                <div class="carousel-item" id="project-automation-copy">
+                <div class="carousel-item" id="project-automation-copy" onclick="openTabFromCarousel('automation')">
                     <div class="carousel-caption d-block d-lg-none">
                         <img src="../images/project-automation.png" class="img-fluid" id="project-image-small">
                         <h4>Automation of daily checks for a package</h4>
@@ -71,7 +71,7 @@
                     </div>
                 </div>
 
-                <div class="carousel-item" id="project-cds-copy">
+                <div class="carousel-item" id="project-cds-copy"  onclick="openTabFromCarousel('cds')">
                     <div class="carousel-caption d-block d-lg-none">
                         <img src="../images/project-cds.png" class="img-fluid" id="project-image-small">
                         <h4>Dynamics and optimization of conventional distillation columns</h4>
@@ -83,7 +83,7 @@
                     </div>
                 </div>
 
-                <div class="carousel-item" id="project-dwc-copy">
+                <div class="carousel-item" id="project-dwc-copy" onclick="openTabFromCarousel('dwc')">
                     <div class="carousel-caption d-block d-lg-none">
                         <img src="../images/project-dwc.png" class="img-fluid" id="project-image-small">
                         <h4>Multi-objective optimization of dividing wall columns</h4>
@@ -118,25 +118,25 @@
                 <div class="project-tab-large">
                     <div class="row py-auto" id="feedback-row">
                         <div class="col-3" id="project-tabs">
-                            <button class="project-tab-link" id="project-testing-copy" onclick="switchTabs(event, 'testing')">
+                            <button class="project-tab-link" id="project-testing-copy-large" onclick="switchTabs(event, 'testing')">
                                 Automation of test cases for a web application
                             </button>
                         </div>
 
                         <div class="col-3" id="project-tabs">
-                            <button class="project-tab-link" id="project-automation-copy" onclick="switchTabs(event, 'automation')">
+                            <button class="project-tab-link" id="project-automation-copy-large" onclick="switchTabs(event, 'automation')">
                                 Automation of daily checks for a package
                             </button>
                         </div>
 
                         <div class="col-3" id="project-tabs">
-                            <button class="project-tab-link" id="project-cds-copy" onclick="switchTabs(event, 'cds')">
+                            <button class="project-tab-link" id="project-cds-copy-large" onclick="switchTabs(event, 'cds')">
                                 Dynamics and optimization of conventional distillation columns
                             </button>
                         </div>
 
                         <div class="col-3" id="project-tabs">
-                            <button class="project-tab-link" id="project-dwc-copy" onclick="switchTabs(event, 'dwc')">
+                            <button class="project-tab-link" id="project-dwc-copy-large" onclick="switchTabs(event, 'dwc')">
                                 Multi-objective optimization of dividing wall columns
                             </button>
                         </div>
@@ -930,11 +930,16 @@
         <!-- Tabs for small screen -->
         <div class="container-fluid" id="project-container">
             <div class="d-block d-md-none">
-                <div class="row py-auto" id="feedback-row">
+                <div class="row py-auto" id="project-position-testing">
                     <div class="col-12" id="project-tabs">
-                        <button class="project-tab-link-small" id="project-testing-copy" onclick="switchTabsSmall(event, 'testing')">
+                        <button class="project-tab-link-small" id="project-testing-copy-small" onclick="switchTabsSmall(event, 'testing')">
                             Automation of test cases for a web application
                         </button>
+
+                        <div class="project-icons" onclick="openTabFromCarousel('testing')">
+                            <i class="fa fa-plus project-icon-plus" id="project-icon-plus-testing"></i>
+                            <i class="fa fa-minus project-icon-minus" id="project-icon-minus-testing"></i>
+                        </div>
                     </div>
                 </div>
 
@@ -1096,11 +1101,16 @@
                     </div>
                 </div>
 
-                <div class="row py-auto" id="feedback-row">
+                <div class="row py-auto" id="project-position-automation">
                     <div class="col-12" id="project-tabs">
-                        <button class="project-tab-link-small" id="project-automation-copy" onclick="switchTabsSmall(event, 'automation')">
+                        <button class="project-tab-link-small" id="project-automation-copy-small" onclick="switchTabsSmall(event, 'automation')">
                             Automation of daily checks for a package
                         </button>
+
+                        <div class="project-icons" onclick="openTabFromCarousel('automation')">
+                            <i class="fa fa-plus project-icon-plus" id="project-icon-plus-automation"></i>
+                            <i class="fa fa-minus project-icon-minus" id="project-icon-minus-automation"></i>
+                        </div>
                     </div>
                 </div>
 
@@ -1297,11 +1307,16 @@
                     </div>
                 </div>
 
-                <div class="row py-auto" id="feedback-row">
+                <div class="row py-auto" id="project-position-cds">
                     <div class="col-12" id="project-tabs">
-                        <button class="project-tab-link-small" id="project-cds-copy" onclick="switchTabsSmall(event, 'cds')">
+                        <button class="project-tab-link-small" id="project-cds-copy-small" onclick="switchTabsSmall(event, 'cds')">
                             Dynamics and optimization of conventional distillation columns
                         </button>
+
+                        <div class="project-icons" onclick="openTabFromCarousel('cds')">
+                            <i class="fa fa-plus project-icon-plus" id="project-icon-plus-cds"></i>
+                            <i class="fa fa-minus project-icon-minus" id="project-icon-minus-cds"></i>
+                        </div>
                     </div>
                 </div>
 
@@ -1550,11 +1565,16 @@
                     </div>
                 </div>
 
-                <div class="row py-auto" id="feedback-row">
-                    <div class="col-12" id="project-tabs">
-                        <button class="project-tab-link-small" id="project-dwc-copy" onclick="switchTabsSmall(event, 'dwc')">
+                <div class="row py-auto" id="project-position-dwc">
+                    <div class="col-12 my-auto" id="project-tabs">
+                        <button class="project-tab-link-small" id="project-dwc-copy-small" onclick="switchTabsSmall(event, 'dwc')">
                             Multi-objective optimization of dividing wall columns
                         </button>
+
+                        <div class="project-icons" onclick="openTabFromCarousel('dwc')">
+                            <i class="fa fa-plus project-icon-plus" id="project-icon-plus-dwc"></i>
+                            <i class="fa fa-minus project-icon-minus" id="project-icon-minus-dwc"></i>
+                        </div>
                     </div>
                 </div>
 

@@ -185,6 +185,7 @@ nav{
 }
 
 .carousel-item{
+    cursor: pointer;
     height: 50vh;
 }
 
@@ -481,6 +482,13 @@ nav{
     display: inline-block;
 }
 
+.project-icons{
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+}
+
 .project-learnings{
     padding-left: 20px;
     text-align: justify;
@@ -536,7 +544,7 @@ nav{
     font-weight: bold;
     padding-bottom: 10px;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 30px;
     padding-top: 10px;
     text-align: left;
     transition: 0.5s;
@@ -760,6 +768,38 @@ nav{
     margin-top: 0px;
 }
 
+#project-icon-minus-automation{
+    display: none;
+}
+
+#project-icon-minus-cds{
+    display: none;
+}
+
+#project-icon-minus-dwc{
+    display: none;
+}
+
+#project-icon-minus-testing{
+    display: none;
+}
+
+#project-icon-plus-automation{
+    display: inline;
+}
+
+#project-icon-plus-cds{
+    display: inline;
+}
+
+#project-icon-plus-dwc{
+    display: inline;
+}
+
+#project-icon-plus-testing{
+    display: inline;
+}
+
 #project-image-large{
     margin-bottom: 10px;
     max-height: 225px;
@@ -768,6 +808,34 @@ nav{
 #project-image-small{
     margin-bottom: 5px;
     max-height: 150px;
+}
+
+#project-position-automation{
+    margin-left: 0px;
+    margin-right: 0px;
+    position: static;
+    z-index: 10;
+}
+
+#project-position-cds{
+    margin-left: 0px;
+    margin-right: 0px;
+    position: static;
+    z-index: 10;
+}
+
+#project-position-dwc{
+    margin-left: 0px;
+    margin-right: 0px;
+    position: static;
+    z-index: 10;
+}
+
+#project-position-testing{
+    margin-left: 0px;
+    margin-right: 0px;
+    position: static;
+    z-index: 10;
 }
 
 #project-table-content{
