@@ -20,3 +20,26 @@ function alignNav(){
     }
     return true;
 }
+
+function alignIcons(){
+    var nav = document.getElementsByTagName("nav")[0];
+    var height = nav.offsetHeight;
+    var navToggler = document.getElementsByClassName('navbar-toggler')[0];
+
+    if(navToggler.offsetHeight == 0){
+        var iconSun = document.getElementById('toggle-icon-sun-large');
+        var iconMoon = document.getElementById('toggle-icon-moon-large');
+        var iconSwitch = document.getElementById('toggle-switch-large');
+    }
+    else{
+        var iconSun = document.getElementById('toggle-icon-sun-small');
+        var iconMoon = document.getElementById('toggle-icon-moon-small');
+        var iconSwitch = document.getElementById('toggle-switch-small');
+    }
+    var iconSunHeight = iconSun.offsetHeight;
+    var iconMoonHeight = iconMoon.offsetHeight;
+    var iconSwitchHeight = iconSwitch.offsetHeight;
+    iconSun.style.top = (height-iconSunHeight)/2 + "px";
+    iconMoon.style.top = (height-iconMoonHeight)/2 + "px";
+    iconSwitch.style.top = (height-iconSwitchHeight)/2 + "px";
+}

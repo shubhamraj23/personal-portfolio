@@ -10,14 +10,14 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="../css/layout.css">
-        <link rel="stylesheet" type="text/css" href="../css/light-theme.css">
+        <link rel="stylesheet" type="text/css" href="../css/light-theme.css" id="page-theme">
         
         <!-- Adding the title and the icon -->
         <title>My Personal Portfolio</title>
         <link rel="icon" href="../images/home-image.jpg" type="image/x-icon">
     </head>
 
-    <body>
+    <body onload="alignIcons(); loadTheme();">
         <!-- Navigation Bar -->
         <nav class="navbar fixed-top navbar-expand-md">
             <div class="container mx-0">
@@ -33,6 +33,36 @@
                         <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Leave a Review</a></li>
                     </ul>
+                </div>
+
+                <div class="d-block d-md-none">
+                    <div class="toggle-icon-sun" id="toggle-icon-sun-small" onclick="iconThemeSwitch('light')">
+                        <i class="fas fa-sun fa-lg"></i>
+                    </div>
+
+                    <label class="toggle-switch" id="toggle-switch-small">
+                        <input type="checkbox" id="toggle-click-small" onclick="switchTheme()">
+                        <span class="toggle-slider"></span>
+                    </label>
+
+                    <div class="toggle-icon-moon" id="toggle-icon-moon-small" onclick="iconThemeSwitch('dark')">
+                        <i class="fas fa-moon fa-lg"></i>
+                    </div>
+                </div>
+
+                <div class="d-none d-md-block">
+                    <div class="toggle-icon-sun" id="toggle-icon-sun-large" onclick="iconThemeSwitch('light')">
+                        <i class="fas fa-sun fa-lg"></i>
+                    </div>
+
+                    <label class="toggle-switch" id="toggle-switch-large">
+                        <input type="checkbox" id="toggle-click-large" onclick="switchTheme()">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    
+                    <div class="toggle-icon-moon" id="toggle-icon-moon-large" onclick="iconThemeSwitch('dark')">
+                        <i class="fas fa-moon fa-lg"></i>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -102,28 +132,28 @@
                                     
                                     <div class="col-10">
                                         <div class="row align-items-center">
-                                            <dt class="col-3">10<sup>th</sup></dt>
-                                            <dd class="col-9">O.P. Jindal School, Raigarh</dd>
+                                            <dt class="col-3 about-header">10<sup>th</sup></dt>
+                                            <dd class="col-9 about-header">O.P. Jindal School, Raigarh</dd>
                                             
-                                            <dt class="col-3">12<sup>th</sup></dt>
-                                            <dd class="col-9">Sri Chaitanya, Hyderabad</dd>
+                                            <dt class="col-3 about-header">12<sup>th</sup></dt>
+                                            <dd class="col-9 about-header">Sri Chaitanya, Hyderabad</dd>
                                             
                                             <dt class="col-3">
                                                 <i class="fa fa-graduation-cap icon"></i>
                                             </dt>
-                                            <dd class="col-9">Indian Institute of Technology, Kharagpur</dd>
+                                            <dd class="col-9 about-header">Indian Institute of Technology, Kharagpur</dd>
                                         </div>
                                     </div>
                                     
                                     <dt class="col-2">
                                         <i class="fas fa-map-marker-alt icon"></i>
                                     </dt>
-                                    <dd class="col-10">Bangalore, India</dd>
+                                    <dd class="col-10 about-header">Bangalore, India</dd>
                                     
                                     <dt class="col-2">
                                         <i class="fas fa-info-circle icon"></i>
                                     </dt>
-                                    <dd class="col-10">Potterhead, Cricket Fan, Squash Player</dd>
+                                    <dd class="col-10 about-header">Potterhead, Cricket Fan, Squash Player</dd>
                                 </dl>
                             </div>
                         </div>
@@ -141,28 +171,28 @@
                                     
                                     <div class="col-10">
                                         <div class="row align-items-center">
-                                            <dt class="col-4">10<sup>th</sup></dt>
-                                            <dd class="col-8">O.P. Jindal School, Raigarh</dd>
+                                            <dt class="col-4 about-header">10<sup>th</sup></dt>
+                                            <dd class="col-8 about-header">O.P. Jindal School, Raigarh</dd>
                                             
-                                            <dt class="col-4">12<sup>th</sup></dt>
-                                            <dd class="col-8">Sri Chaitanya, Hyderabad</dd>
+                                            <dt class="col-4 about-header">12<sup>th</sup></dt>
+                                            <dd class="col-8 about-header">Sri Chaitanya, Hyderabad</dd>
                                             
                                             <dt class="col-4">
                                                 <i class="fa fa-graduation-cap icon"></i>
                                             </dt>
-                                            <dd class="col-8">Indian Institute of Technology, Kharagpur</dd>
+                                            <dd class="col-8 about-header">Indian Institute of Technology, Kharagpur</dd>
                                         </div>
                                     </div>
                                     
                                     <dt class="col-2">
                                         <i class="fas fa-map-marker-alt icon"></i>
                                     </dt>
-                                    <dd class="col-10">Bangalore, India</dd>
+                                    <dd class="col-10 about-header">Bangalore, India</dd>
                                     
                                     <dt class="col-2">
                                         <i class="fas fa-info-circle icon"></i>
                                     </dt>
-                                    <dd class="col-10">Potterhead, Cricket Fan, Squash Player</dd>
+                                    <dd class="col-10 about-header">Potterhead, Cricket Fan, Squash Player</dd>
                                 </dl>
                             </div>
                         </div>
@@ -346,12 +376,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>    
 
-        
         <!-- Linking the required javascript files -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="../javascript/alignment.js"></script>
+        <script src="../javascript/changeTheme.js"></script>
     </body>
 </html>

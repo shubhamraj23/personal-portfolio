@@ -10,14 +10,14 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="../css/layout.css">
-        <link rel="stylesheet" type="text/css" href="../css/light-theme.css">
+        <link rel="stylesheet" type="text/css" href="../css/light-theme.css" id="page-theme">
         
         <!-- Adding the title and the icon -->
         <title>Hobbies</title>
         <link rel="icon" href="../images/home-image.jpg" type="image/x-icon">
     </head>
 
-    <body>
+    <body onload="alignIcons(); loadTheme();">
         <!-- Navigation Bar -->
         <nav class="navbar fixed-top navbar-expand-md">
             <div class="container mx-0">
@@ -33,6 +33,36 @@
                         <li class="nav-item active"><a class="nav-link" href="#" id="active-link">Hobbies</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Leave a Review</a></li>
                     </ul>
+                </div>
+
+                <div class="d-block d-md-none">
+                    <div class="toggle-icon-sun" id="toggle-icon-sun-small" onclick="iconThemeSwitch('light')">
+                        <i class="fas fa-sun fa-lg"></i>
+                    </div>
+
+                    <label class="toggle-switch" id="toggle-switch-small">
+                        <input type="checkbox" id="toggle-click-small" onclick="switchTheme()">
+                        <span class="toggle-slider"></span>
+                    </label>
+
+                    <div class="toggle-icon-moon" id="toggle-icon-moon-small" onclick="iconThemeSwitch('dark')">
+                        <i class="fas fa-moon fa-lg"></i>
+                    </div>
+                </div>
+
+                <div class="d-none d-md-block">
+                    <div class="toggle-icon-sun" id="toggle-icon-sun-large" onclick="iconThemeSwitch('light')">
+                        <i class="fas fa-sun fa-lg"></i>
+                    </div>
+
+                    <label class="toggle-switch" id="toggle-switch-large">
+                        <input type="checkbox" id="toggle-click-large" onclick="switchTheme()">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    
+                    <div class="toggle-icon-moon" id="toggle-icon-moon-large" onclick="iconThemeSwitch('dark')">
+                        <i class="fas fa-moon fa-lg"></i>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -183,18 +213,18 @@
                                     <div class="col-12 col-md-6">
                                         <h5 class="hobby-reading-points">Some of my favourite books are</h5>
                                         <ul>
-                                            <li>The Hound of the Baskervilles</li>
-                                            <li>A Study in Scarlet</li>
-                                            <li>Harry Potter and the Deathly Hallows</li>
+                                            <li class="hobby-reading-subheading-points">The Hound of the Baskervilles</li>
+                                            <li class="hobby-reading-subheading-points">A Study in Scarlet</li>
+                                            <li class="hobby-reading-subheading-points">Harry Potter and the Deathly Hallows</li>
                                         </ul>
                                     </div>
 
                                     <div class="col-12 col-md-6">
                                         <h5 class="hobby-reading-points">Some books that I want to read</h5>
                                         <ul>
-                                            <li>The Time Machine</li>
-                                            <li>The 5am Club</li>
-                                            <li>Rich Dad Poor Dad</li>
+                                            <li class="hobby-reading-subheading-points">The Time Machine</li>
+                                            <li class="hobby-reading-subheading-points">The 5am Club</li>
+                                            <li class="hobby-reading-subheading-points">Rich Dad Poor Dad</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -236,7 +266,7 @@
                                         <hr class="bio-quotes-divider">
 
                                         <div class="col-10 mx-auto">
-                                            <h6 class="bio-quote">
+                                            <h6 class="bio-quote" id="hobby-fact-large">
                                                 A squash court was used to carry out the first controlled experiment of a nuclear bomb
                                                 during The Manhattan Project.
                                             </h6>
@@ -244,7 +274,7 @@
                                         <hr class="bio-quotes-divider">
 
                                         <div class="col-10 mx-auto">
-                                            <h6 class="bio-quote">
+                                            <h6 class="bio-quote" id="hobby-fact-large">
                                                 An hour of competitive squash can burn upto 1000 calories.
                                             </h6>
                                         </div>
@@ -302,18 +332,18 @@
                                 <div class="col-3 my-auto">
                                     <h5 class="hobby-reading-points">Some of my favourite books are</h5>
                                     <ul>
-                                        <li>The Hound of the Baskervilles</li>
-                                        <li>A Study in Scarlet</li>
-                                        <li>Harry Potter and the Deathly Hallows</li>
+                                        <li class="hobby-reading-subheading-points">The Hound of the Baskervilles</li>
+                                        <li class="hobby-reading-subheading-points">A Study in Scarlet</li>
+                                        <li class="hobby-reading-subheading-points">Harry Potter and the Deathly Hallows</li>
                                     </ul>
                                 </div>
 
                                 <div class="col-3 my-auto">
                                     <h5 class="hobby-reading-points">Some books that I want to read</h5>
                                     <ul>
-                                        <li>The Time Machine</li>
-                                        <li>The 5am Club</li>
-                                        <li>Rich Dad Poor Dad</li>
+                                        <li class="hobby-reading-subheading-points">The Time Machine</li>
+                                        <li class="hobby-reading-subheading-points">The 5am Club</li>
+                                        <li class="hobby-reading-subheading-points">Rich Dad Poor Dad</li>
                                     </ul>
                                 </div>
 
@@ -404,5 +434,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="../javascript/alignment.js"></script>
+        <script src="../javascript/changeTheme.js"></script>
     </body>
 </html>
