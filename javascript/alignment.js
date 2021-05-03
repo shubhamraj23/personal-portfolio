@@ -18,7 +18,6 @@ function alignNav(){
         var offsetHeight = height/2 - icons.offsetHeight/2;
         icons.style.bottom = offsetHeight + "px";
     }
-    return true;
 }
 
 function alignIcons(){

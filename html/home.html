@@ -17,7 +17,7 @@
         <link rel="icon" href="../images/home-image.jpg" type="image/x-icon">
     </head>
 
-    <body onload="alignIcons(); loadTheme();">
+    <body>
         <!-- Navigation Bar -->
         <nav class="navbar fixed-top navbar-expand-md">
             <div class="container mx-0">
@@ -384,5 +384,9 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="../javascript/alignment.js"></script>
         <script src="../javascript/changeTheme.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", loadTheme());
+            document.addEventListener("DOMContentLoaded", alignIcons());
+        </script>
     </body>
 </html>
