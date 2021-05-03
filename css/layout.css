@@ -815,6 +815,10 @@ input:checked + .toggle-slider:before{
     position: relative;
 }
 
+#page-theme{
+    transition: all 1s;
+}
+
 #project-container{
     padding-left: 0px;
     padding-right: 0px;

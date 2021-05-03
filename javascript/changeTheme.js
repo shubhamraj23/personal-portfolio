@@ -42,10 +42,14 @@ function loadTheme(){
 }
 
 function reverseImages(){
-    var image = document.getElementById('project-1-large');
+    var imageH1 = document.getElementById('project-1-large').offsetHeight;
+    var imageH2 = document.getElementById('project-2-large').offsetHeight;
+    var imageH3 = document.getElementById('project-3-large').offsetHeight;
+    var imageH4 = document.getElementById('project-4-large').offsetHeight;
+    var imageHeight = imageH1 + imageH2 + imageH3 + imageH4;
     let localData = localStorage.getItem("theme");
 
-    if(image.offsetHeight != 0){
+    if(imageHeight != 0){
         var image1 = document.getElementById('project-1-large');
         var image2 = document.getElementById('project-2-large');
         var image3 = document.getElementById('project-3-large');

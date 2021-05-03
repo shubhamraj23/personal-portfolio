@@ -69,7 +69,7 @@ nav{
 }
 
 .bio-side-heading{
-    color: white;
+    color: #fdfd96;
 }
 
 .bio-side-tab{
@@ -174,7 +174,7 @@ nav{
 }
 
 .hobby-fact{
-    color: #e7decc;
+    color: #fdfd96;
 }
 
 .hobby-heading{
@@ -194,7 +194,7 @@ nav{
 }
 
 .hobby-reading-points{
-    color: #ffc095;
+    color: #fdfd96;
 }
 
 .hobby-reading-subheading{
@@ -242,7 +242,7 @@ nav{
 }
 
 .project-content-header{
-    color: #ffc095;
+    color: #ff959f;
 }
 
 .project-description-content{
@@ -306,7 +306,7 @@ nav{
 }
 
 .project-table-left{
-    color: #ffb2ae;
+    color: #ffc095;
 }
 
 .project-table-right{
@@ -375,11 +375,15 @@ input:focus + .toggle-slider:before{
 }
 
 #hobby-fact{
-    color: #c1ffff;
+    color: white;
+}
+
+#hobby-fact-divider{
+    border-color: #c1ffff;
 }
 
 #hobby-fact-large{
-    color: #c1ffff;
+    color: white;
 }
 
 #hobby-painting{
