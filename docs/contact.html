@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required Meta Tags For Responsiveness -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Linking the required stylesheets -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="css/layout.css">
+        <link rel="stylesheet" type="text/css" href="css/light-theme.css" id="page-theme">
+        
+        <!-- Adding the title and the icon -->
+        <title>Leave a Review</title>
+        <link rel="icon" href="images/home-image.jpg" type="image/x-icon">
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar fixed-top navbar-expand-md">
+            <div class="container mx-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="fa fa-bars"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Bio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#" id="active-link">Leave a Review</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-block d-md-none">
+                    <div class="toggle-icon-sun" id="toggle-icon-sun-small" onclick="iconThemeSwitch('light')">
+                        <i class="fas fa-sun fa-lg"></i>
+                    </div>
+
+                    <label class="toggle-switch" id="toggle-switch-small">
+                        <input type="checkbox" id="toggle-click-small" onclick="switchTheme()">
+                        <span class="toggle-slider"></span>
+                    </label>
+
+                    <div class="toggle-icon-moon" id="toggle-icon-moon-small" onclick="iconThemeSwitch('dark')">
+                        <i class="fas fa-moon fa-lg"></i>
+                    </div>
+                </div>
+
+                <div class="d-none d-md-block">
+                    <div class="toggle-icon-sun" id="toggle-icon-sun-large" onclick="iconThemeSwitch('light')">
+                        <i class="fas fa-sun fa-lg"></i>
+                    </div>
+
+                    <label class="toggle-switch" id="toggle-switch-large">
+                        <input type="checkbox" id="toggle-click-large" onclick="switchTheme()">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    
+                    <div class="toggle-icon-moon" id="toggle-icon-moon-large" onclick="iconThemeSwitch('dark')">
+                        <i class="fas fa-moon fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-2">
+                    <div class="row" id="feedback-row">
+                        <div class="feedback-header col-12">
+                            <h5 class="feedback-header-text">Thank you for your valuable feedback!</h5>
+                        </div>
+
+                        <div class="feedback-stats col-12 col-md-8 offset-md-2">
+                            <div class="row my-auto">
+                                <div class="feedback-stats-left col-6 mx-auto">
+                                    <h2 class="feedback-stats-number">6</h2>
+                                    <h5 class="feedback-stats-subheading">questions</h5>
+                                </div>
+        
+                                <div class="feedback-stats-right col-6 mx-auto">
+                                    <h2 class="feedback-stats-number">3 min</h2>
+                                    <h5 class="feedback-stats-subheading">to complete</h5>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="feedback col-12">
+                            <div class="feedback-form-heading">
+                                <h4>Leave a review below</h4>    
+                            </div>
+
+                            <div class="row">
+                                <div class="col-11 col-md-9 mx-auto">
+                                    <form name="feedback-form" class="feedback-form">
+                                        <div class="form-group">
+                                            <label for="name">
+                                                <span class="form-text">Name:</span>
+                                            </label>
+                                            <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+                                        </div>
+
+                                        <div class="alert-message" id="form-validation-name">
+                                            <h6>* Please enter your name</h6>
+                                        </div>
+                                        <hr class="feedback-form-divider">
+        
+                                        <div class="form-group">
+                                            <label for="email">
+                                                <span class="form-text">Email id:</span>
+                                            </label>
+                                            <input type="email" class="form-control" id="email" placeholder="Enter Your Email id">
+                                        </div>
+
+                                        <div class="alert-message" id="form-validation-email">
+                                            <h6>* Please enter your email id</h6>
+                                        </div>
+                                        <div class="alert-message" id="form-verify-email">
+                                            <h6>* Please enter a valid email id</h6>
+                                        </div>
+                                        <hr class="feedback-form-divider">
+
+                                        <div class="form-group">
+                                            <label>
+                                                <span class="form-text">How would you rate the design of the website?</span>
+                                            </label>
+                                            <div class="form-radio-button">
+                                                <label for="design-review-1">
+                                                    <input id="design-review-1" type="radio" name="design-review" value="Absolutely Amazing">
+                                                    <span class="form-radio-text"> Absolutely Amazing</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-radio-button">
+                                                <label for="design-review-2">
+                                                    <input id="design-review-2" type="radio" name="design-review" value="Very Good">
+                                                    <span class="form-radio-text"> Very Good</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-radio-button">
+                                                <label for="design-review-3">
+                                                    <input id="design-review-3" type="radio" name="design-review" value="Good but could have been better">
+                                                    <span class="form-radio-text"> Good but could have been better</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-radio-button">
+                                                <label for="design-review-4">
+                                                    <input id="design-review-4" type="radio" name="design-review" value="Needs Improvement">
+                                                    <span class="form-radio-text"> Needs Improvement</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-radio-button">
+                                                <label for="design-review-5">
+                                                    <input id="design-review-5" type="radio" name="design-review" value="Terrible">
+                                                    <span class="form-radio-text"> Terrible</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <hr class="feedback-form-divider">
+                
+                                        <div class="form-group">
+                                            <label>
+                                                <span class="form-text">How would you rate the ease of navigation through the website?</span>
+                                            </label>
+                                            <div class="form-radio-button">
+                                                <label for="ease-review-1">
+                                                    <input id="ease-review-1" type="radio" name="ease-review" value="Easy to Navigate">
+                                                    <span class="form-radio-text"> Easy to Navigate</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-radio-button">
+                                                <label for="ease-review-2">
+                                                    <input id="ease-review-2" type="radio" name="ease-review" value="Easy but could have been better">
+                                                    <span class="form-radio-text"> Easy but could have been better</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-radio-button">
+                                                <label for="ease-review-3">
+                                                    <input id="ease-review-3" type="radio" name="ease-review" value="Very Difficult to Navigate">
+                                                    <span class="form-radio-text"> Very Difficult to Navigate</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <hr class="feedback-form-divider">
+
+                                        <div class="form-group">
+                                            <label>
+                                                <span class="form-text">Did you find this website worthy of a personal portfolio?</span>
+                                            </label>
+                                            <div class="form-radio-button">
+                                                <label for="worth-review-1">
+                                                    <input id="worth-review-1" type="radio" name="worth-review" value="Highly Worthy">
+                                                    <span class="form-radio-text"> Highly Worthy</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-radio-button">
+                                                <label for="worth-review-2">
+                                                    <input id="worth-review-2" type="radio" name="worth-review" value="Good but could have been better">
+                                                    <span class="form-radio-text"> Good but could have been better</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-radio-button">
+                                                <label for="worth-review-3">
+                                                    <input id="worth-review-3" type="radio" name="worth-review" value="Not worth my time">
+                                                    <span class="form-radio-text"> Not worth my time</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <hr class="feedback-form-divider">
+
+                                        <div class="form-group">
+                                            <label for="suggestions">
+                                                <span class="form-text">Any comments or suggestions</span>
+                                            </label>
+                                            <textarea class="form-control" name="comments" id="comments" rows="4" placeholder="Enter Your Suggestions here..."></textarea>
+                                        </div>
+                
+                                        <div class="form-group">
+                                            <button type="submit" id="submit" class="form-submit-button" title="Submit Your Feedback" onclick="return validateForm()">Submit</button>
+                                        </div>
+
+                                        <div class="alert-message" id="form-validate">
+                                            <h6>* Please fill in the mandatory details correctly</h6>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-sm-6">
+                        <h5 class="footer-heading">Links</h5>
+                        <ul class="footer-bullets">
+                            <li><a href="home.html" class="footer-link">Home</a></li>
+                            <li><a href="about.html" class="footer-link">Bio</a></li>
+                            <li><a href="projects.html" class="footer-link">Projects</a></li>
+                            <li><a href="hobbies.html" class="footer-link">Hobbies</a></li>
+                        </ul>    
+                    </div>
+
+                    <div class="col-8 col-sm-6">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="footer-heading">Contact</h5>
+                            </div>
+                            
+                            <div class="col-8 col-sm-2">
+                                <i class="fas fa-map-marker-alt icon"></i>
+                            </div>
+                            
+                            <div class="col-12 col-sm-10">
+                                <h6 class="footer-text">
+                                    Qtr. No. D-30/2 <br>
+                                    Jindal nagar Colony, JSPL <br>
+                                    Angul, Odisha <br>
+                                </h6>
+                            </div>
+
+                            <div class="col-8 col-sm-2">
+                                <i class="fas fa-envelope icon"></i>
+                            </div>
+                            
+                            <div class="col-12 col-sm-10 d-block d-md-none" style="overflow-x: scroll;">
+                                <h6 class="footer-text">
+                                    shubhamraj465@gmail.com
+                                </h6>
+                            </div>
+
+                            <div class="col-12 col-sm-10 d-none d-md-block">
+                                <h6 class="footer-text">
+                                    shubhamraj465@gmail.com
+                                </h6>
+                            </div>
+                            
+                            <div class="col-8 col-sm-2">
+                                <i class="fas fa-phone-alt icon"></i>
+                            </div>
+                            
+                            <div class="col-12 col-sm-10">
+                                <h6 class="footer-text">
+                                    +91-7674045435
+                                </h6>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Linking the required javascript files -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="javascript/alignment.js"></script>
+        <script src="javascript/changeTheme.js"></script>
+        <script src="javascript/formValidation.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", loadTheme());
+            document.addEventListener("DOMContentLoaded", alignIcons());
+        </script>
+    </body>
+</html>

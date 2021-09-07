@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required Meta Tags For Responsiveness -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Linking the required stylesheets -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="css/layout.css">
+        <link rel="stylesheet" type="text/css" href="css/light-theme.css" id="page-theme">
+        
+        <!-- Adding the title and the icon -->
+        <title>Projects</title>
+        <link rel="icon" href="images/home-image.jpg" type="image/x-icon">
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar fixed-top navbar-expand-md">
+            <div class="container mx-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="fa fa-bars"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Bio</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#" id="active-link">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Leave a Review</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-block d-md-none">
+                    <div class="toggle-icon-sun" id="toggle-icon-sun-small" onclick="iconThemeSwitch('light')">
+                        <i class="fas fa-sun fa-lg"></i>
+                    </div>
+
+                    <label class="toggle-switch" id="toggle-switch-small">
+                        <input type="checkbox" id="toggle-click-small" onclick="switchTheme()">
+                        <span class="toggle-slider"></span>
+                    </label>
+
+                    <div class="toggle-icon-moon" id="toggle-icon-moon-small" onclick="iconThemeSwitch('dark')">
+                        <i class="fas fa-moon fa-lg"></i>
+                    </div>
+                </div>
+
+                <div class="d-none d-md-block">
+                    <div class="toggle-icon-sun" id="toggle-icon-sun-large" onclick="iconThemeSwitch('light')">
+                        <i class="fas fa-sun fa-lg"></i>
+                    </div>
+
+                    <label class="toggle-switch" id="toggle-switch-large">
+                        <input type="checkbox" id="toggle-click-large" onclick="switchTheme()">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    
+                    <div class="toggle-icon-moon" id="toggle-icon-moon-large" onclick="iconThemeSwitch('dark')">
+                        <i class="fas fa-moon fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Carousel -->
+        <div class="carousel slide" data-ride="carousel" id="project-carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#project-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#project-carousel" data-slide-to="1"></li>
+                <li data-target="#project-carousel" data-slide-to="2"></li>
+                <li data-target="#project-carousel" data-slide-to="3"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="project-testing-copy" onclick="openTabFromCarousel('testing')">
+                    <div class="carousel-caption d-block d-lg-none">
+                        <img src="images/project-testing.png" class="img-fluid project-image-small" id="project-1-small">
+                        <h4>Automation of test cases for a web application</h4>
+                    </div>
+
+                    <div class="carousel-caption d-none d-lg-block">
+                        <img src="images/project-testing.png" class="img-fluid project-image-large" id="project-1-large">
+                        <h3>Automation of test cases for a web application</h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item" id="project-automation-copy" onclick="openTabFromCarousel('automation')">
+                    <div class="carousel-caption d-block d-lg-none">
+                        <img src="images/project-automation.png" class="img-fluid project-image-small" id="project-2-small">
+                        <h4>Automation of daily checks for a package</h4>
+                    </div>
+
+                    <div class="carousel-caption d-none d-lg-block">
+                        <img src="images/project-automation.png" class="img-fluid project-image-large" id="project-2-large">
+                        <h3>Automation of daily checks for a package</h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item" id="project-cds-copy"  onclick="openTabFromCarousel('cds')">
+                    <div class="carousel-caption d-block d-lg-none">
+                        <img src="images/project-cds.png" class="img-fluid project-image-small" id="project-3-small">
+                        <h4>Dynamics and optimization of conventional distillation columns</h4>
+                    </div>
+
+                    <div class="carousel-caption d-none d-lg-block">
+                        <img src="images/project-cds.png" class="img-fluid project-image-large" id="project-3-large">
+                        <h3>Dynamics and optimization of conventional distillation columns</h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item" id="project-dwc-copy" onclick="openTabFromCarousel('dwc')">
+                    <div class="carousel-caption d-block d-lg-none">
+                        <img src="images/project-dwc.png" class="img-fluid project-image-small" id="project-4-small">
+                        <h4>Multi-objective optimization of dividing wall columns</h4>
+                    </div>
+
+                    <div class="carousel-caption d-none d-lg-block">
+                        <img src="images/project-dwc.png" class="img-fluid project-image-large" id="project-4-large">
+                        <h3>Multi-objective optimization of dividing wall columns</h3>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#project-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="project-header">
+            <p class="project-header-text">
+                Click on the tabs below to view full details
+            </p>
+        </div>
+
+        <!-- Tabs for large screen -->
+        <div class="container-fluid" id="project-container">
+            <div class="d-none d-md-block">
+                <div class="project-tab-large">
+                    <div class="row py-auto" id="feedback-row">
+                        <div class="col-3" id="project-tabs">
+                            <button class="project-tab-link" id="project-testing-copy-large" onclick="switchTabs(event, 'testing')">
+                                Automation of test cases for a web application
+                            </button>
+                        </div>
+
+                        <div class="col-3" id="project-tabs">
+                            <button class="project-tab-link" id="project-automation-copy-large" onclick="switchTabs(event, 'automation')">
+                                Automation of daily checks for a package
+                            </button>
+                        </div>
+
+                        <div class="col-3" id="project-tabs">
+                            <button class="project-tab-link" id="project-cds-copy-large" onclick="switchTabs(event, 'cds')">
+                                Dynamics and optimization of conventional distillation columns
+                            </button>
+                        </div>
+
+                        <div class="col-3" id="project-tabs">
+                            <button class="project-tab-link" id="project-dwc-copy-large" onclick="switchTabs(event, 'dwc')">
+                                Multi-objective optimization of dividing wall columns
+                            </button>
+                        </div>
+                    </div>   
+                </div>
+
+                <!-- Tab Content -->
+                <div class="project-tab-content" id="project-testing">
+                    <div class="row">
+                        <div class="col-10 col-lg-8 mx-auto">
+                            <div class="project-tabs-heading">
+                                <div class="d-md-none d-lg-block">
+                                    <h2>Automation of test cases for a web application</h2>
+                                </div>
+                                <div class="d-md-block d-lg-none">
+                                    <h3>Automation of test cases for a web application</h3>
+                                </div>
+                            </div>
+
+                            <div class="project-description-block">
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">A</h3>
+                                    <h5 class="project-description-heading-smaller">&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">B</h3>
+                                    <h5 class="project-description-heading-smaller">RIEF&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">O</h3>
+                                    <h5 class="project-description-heading-smaller">VERVIEW</h5>
+                                </div>
+
+                                <p class="project-description-content">
+                                    In the summer of 2019, I was hired as a software intern for Itiviti India Private Limited, where I worked on two projects. 
+                                    The organization develops software products to help financial institutions worldwide
+                                    with their trading practices. In an era where the capital markets are highly complex, 
+                                    automated trading operation is a highly complex business, where the lack of testing strategies 
+                                    has a huge impact. Managing test environments, with multiple test components, is costly 
+                                    and resource-intensive both in terms of staffing and technical infrastructure requirements. 
+                                    Firms may end up spending more time maintaining their complex testing 
+                                    environments than performing actual tests. VeriFIX Enterprise is a software application 
+                                    developed by Itviti which helps firms manage their testing environments. This project aimed 
+                                    at automating the test cases for the software application, VeriFIX Enterprise.
+                                </p>
+                                    
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">P</h3>
+                                    <h5 class="project-description-heading-smaller">ROJECT&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">P</h3>
+                                    <h5 class="project-description-heading-smaller">ROBLEM&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">S</h3>
+                                    <h5 class="project-description-heading-smaller">TATEMENT</h5>
+                                </div>
+
+                                <p class="project-description-content">
+                                    As the application of VeriFIX enterprise is constantly developing, upgrading and adding 
+                                    new features to it, proof testing of the upgrades and newer additions are necessary to find 
+                                    out the bugs and their removal. To test any software, manual testing is performed on 
+                                    the newly upgraded components, which is followed by automated testing of the complete software. 
+                                    For certain components, the manual testing part had been completed, and the test cases needed 
+                                    to be automated to fasten the process of testing in further deployments. The task assigned to 
+                                    me was to validate the working of a filter criteria button in the web application
+                                    and generate test cases for the same.
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">T</h3>
+                                    <h5 class="project-description-heading-smaller">OOLS&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">U</h3>
+                                    <h5 class="project-description-heading-smaller">SED</h5>
+                                </div>
+
+                                <p class="project-description-content">
+                                    <div class="row">
+                                        <div class="col-9 col-lg-8">
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="project-table-left">Developing Environment</th>
+                                                        <td class="project-table-right">Eclipse</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Programming Language</th>
+                                                        <td class="project-table-right">Java</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Testing Framework</th>
+                                                        <td class="project-table-right">JUnit</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Automation Driver</th>
+                                                        <td class="project-table-right">Selenium Web Driver</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Other Tools</th>
+                                                        <td class="project-table-right">Git</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>      
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">A</h3>
+                                    <h5 class="project-description-heading-smaller">CTIONS&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">T</h3>
+                                    <h5 class="project-description-heading-smaller">AKEN</h5>
+                                </div>
+                                
+                                <p class="project-description-content">
+                                    To test the filter criteria button, the first step was logging in to the web application. To 
+                                    automate this step, the Selenium web driver was used to log in and perform all the 
+                                    navigational tasks that had to be performed before the actual test started. The code for 
+                                    performing all these tasks was kept in the proper annotation of the JUnit Test Case so that 
+                                    these tasks would run at the beginning. Before applying the filter, all the messages were extracted 
+                                    and those which had the desired filter present in them were counted. The count was stored. The next step was to apply 
+                                    the filter and count the total number of messages present. If this number matched with the number 
+                                    stored, this part of the test would be a success, else it would fail and indicate that 
+                                    the filter criteria button wasn't working properly. An additional condition was added to further 
+                                    validate the button, which was to check if every message in the message box after application of 
+                                    filter criteria contained the desired filter or not. The first condition ensured that no messages were 
+                                    missed out after the application of the filter, while the second condition ensured that no messages that 
+                                    shouldn't be present appeared in the message box. If both the conditions passed successfully, the test passed,
+                                    indicating that the filter criteria button was working properly. If any of the above conditions failed, the test 
+                                    would fail and indicate some error in the working of the filter criteria button.
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">K</h3>
+                                    <h5 class="project-description-heading-smaller">EY&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">L</h3>
+                                    <h5 class="project-description-heading-smaller">EARNINGS</h5>
+                                </div>
+                    
+                                <ul class="project-learnings">
+                                    <li>Understood the process of software testing and the reasons for its automation</li>
+                                    <li>Learnt a new programming language Java and a testing framework JUnit associated with it</li>
+                                    <li>Learnt the usage of Selenium Web Driver to extract data out from the web</li>
+                                    <li>Got to know the Git version control workflow and its usage to track changes in a file system</li>
+                                </ul>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tab-content" id="project-automation">
+                    <div class="row">
+                        <div class="col-10 col-lg-8 mx-auto">
+                            <div class="project-tabs-heading">
+                                <div class="d-md-none d-lg-block">
+                                    <h2>Automation of daily checks for a package</h2>
+                                </div>
+                                <div class="d-md-block d-lg-none">
+                                    <h3>Automation of daily checks for a package</h3>
+                                </div>
+                            </div>
+
+                            <div class="project-description-block">
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">A</h3>
+                                    <h5 class="project-description-heading-smaller">&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">B</h3>
+                                    <h5 class="project-description-heading-smaller">RIEF&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">O</h3>
+                                    <h5 class="project-description-heading-smaller">VERVIEW</h5>
+                                </div>
+
+                                <p class="project-description-content">
+                                    In the summer of 2019, I worked as a software intern for Itiviti India Private Limited, 
+                                    where I worked on two projects. The organization develops software products to help financial 
+                                    institutions worldwide with their trading practices. One of their products was the Itiviti 
+                                    Analyst package. It is a package consisting of a suite of apps, sessions, disks as well as 
+                                    databases which ensures that the various trading practices followed by its various clients 
+                                    comply with various trade regulations. Morning checks are a series of checks being done daily 
+                                    to ensure the proper implementation of the Itiviti Analyst package. This project aimed at automating 
+                                    the manual process of morning checks.
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">P</h3>
+                                    <h5 class="project-description-heading-smaller">ROJECT&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">P</h3>
+                                    <h5 class="project-description-heading-smaller">ROBLEM&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">S</h3>
+                                    <h5 class="project-description-heading-smaller">TATEMENT</h5>
+                                </div>
+
+                                <p class="project-description-content">
+                                    The Itiviti Analyst package is implemented on the client-side of the server. Post-implementation, 
+                                    the team ensures that all the apps run correctly, checks whether all the sessions 
+                                    are appropriately configured and verifies if the data collection is happening correctly. 
+                                    To ensure this, a series of checks were done daily, which are known as morning checks. 
+                                    The entire process of morning checks consists of 10 components, which were performed one after the 
+                                    other. This was followed by the preparation of a report that contained the results and summary of 
+                                    the checks. This report was sent to the client via email. This process of performing the checks 
+                                    and preparing the reports was being carried out manually for every client. Only the process of 
+                                    sending email had already been automated. The entire process, from performing the check to 
+                                    sending the email used to take around 1 to 1.5 hours per client. The task assigned to me was 
+                                    to automate the processes of performing the checks and preparing the reports so that it could be 
+                                    seamlessly integrated with the existing script which sent the email.
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">T</h3>
+                                    <h5 class="project-description-heading-smaller">HE&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">M</h3>
+                                    <h5 class="project-description-heading-smaller">ANUAL&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">P</h3>
+                                    <h5 class="project-description-heading-smaller">ROCESS</h5>
+                                </div>
+
+                                <p class="project-description-content">
+                                    For performing the checks, the tester had to login into the client-side of the server through a remote 
+                                    access connection. The server was a Linux server and the software PuTTY was used for this purpose. 
+                                    After having remote access to the server, the tester had to login into the database containing 
+                                    the details of all the package components configured for the client. The status of all the components 
+                                    can be known from the database. Then, corresponding to each of the 10 components of the morning checks, 
+                                    a series of commands were fired from the terminal. The output from every command was collected manually
+                                    and stored. 
+                                    These outputs were combined and accordingly processed to generate the result of the particular component. 
+                                    The results were integrated into a file to prepare the report.
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">A</h3>
+                                    <h5 class="project-description-heading-smaller">CTIONS&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">T</h3>
+                                    <h5 class="project-description-heading-smaller">AKEN</h5>
+                                </div>
+
+                                <h5 class="project-content-header">Selection of a suitable library</h5>
+                                <p class="project-description-content" id="project-content-bottom">
+                                    The basic idea behind the automation of morning checks was to replicate the process being carried 
+                                    out manually. Since the manual process included the firing of commands into the Linux terminal, a 
+                                    library had to be chosen which could fire commands into the terminal from the script itself and 
+                                    collect the output. Various Python libraries are available which allow the user to interact with 
+                                    the command line. Some notable ones among them are Python Fire, subprocess, threading, multithreading 
+                                    and multiprocessing libraries. For choosing the appropriate library, the following points had to be considered:
+                                    <ul class="project-learnings" id="project-content-bottom">
+                                        <li>The library must allow the creation and running of a new process from the script itself</li>
+                                        <li>The library must check the output of the process i.e., whether the command successfully ran or not</li>
+                                        <li>The library must be able to collect the output of the command displayed on the terminal and save it in a file</li>
+                                        <li>The library must be present in Python 2.7, which was the version of Python being used on the server at that time</li>
+                                    </ul>
+                                    <p class="project-description-content">
+                                        Considering these points, the subprocess library was chosen as it satisfied all of them.
+                                    </p>
+                                </p>
+
+                                <h5 class="project-content-header">Automating the components of the checks</h5>
+                                <p class="project-description-content">
+                                    After a suitable library was chosen, the next task was to write a script to automate each component 
+                                    of the morning checks. For every component, one or more commands were fired into the terminal using 
+                                    the subprocess library. Depending upon the commands and the requirements, either the output of the 
+                                    process (whether the process ran successfully or not) or the output displayed by the command on the 
+                                    terminal was collected. This output was stored in a text file and the required processing related 
+                                    to the component of the check was performed.
+                                </p>
+
+                                <h5 class="project-content-header">Preparation of morning checks report</h5>
+                                <p class="project-description-content">
+                                    The report of morning checks was prepared in two formats. One was a regular .txt file and the other one 
+                                    was a .html file. At the beginning of the script, an empty .txt/.html file was created. After processing 
+                                    the outputs from the terminal, the results were appended to the .txt file. In the case of the .html file, 
+                                    appropriate tags were inserted at appropriate locations to ensure the proper formatting of the report.
+                                </p>
+
+                                <h5 class="project-content-header">Handling exceptions during runtime</h5>
+                                <p class="project-description-content">
+                                    The biggest issue during the automation of morning checks was the handling of exceptions. The entire process 
+                                    of morning checks was being carried out on a real-time operating server. The server being dynamic was bound 
+                                    to cause misfunctioning of commands at certain times. All the commands in the script 
+                                    were being fired in series. Hence, the termination or misfunctioning of a single command would lead to the 
+                                    termination of the entire script. To avoid this, exception handling was needed. This was achieved 
+                                    by carefully examining the piece of code for possible sources where termination of the script could take place. 
+                                    To handle these exceptions, a try-except block was used for every possible case. The except block was 
+                                    carefully designed to ensure that the script doesn't terminate due to the non-functioning of commands.
+                                </p>
+
+                                <h5 class="project-content-header">Ensuring robustness of the created script</h5>
+                                <p class="project-description-content">
+                                    The most important part of the project was to ensure the robustness of the script. This was done to ensure 
+                                    that the same script could be used for different clients by making minimal changes to it. The different variables for a client were stored in different lists, each 
+                                    corresponding to a different command, at the top of the script. While execution, the script would take values from the 
+                                    list, insert them at the appropriate position in the command and then fire it. Hence, the process of modifying the script 
+                                    for different clients reduced down to suitably manipulating the different lists for a particular client. The script was 
+                                    designed to take care of the rest. 
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">K</h3>
+                                    <h5 class="project-description-heading-smaller">EY&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">C</h3>
+                                    <h5 class="project-description-heading-smaller">ONTRIBUTIONS</h5>
+                                </div>
+                    
+                                <ul class="project-learnings">
+                                    <li>Created a Python script that performs all the components of the morning checks and generates the report in .txt format.</li>
+                                    <li>Created another Python script that performs the morning checks and generates the reports in .html format. This report could be 
+                                        easily integrated with another existing Python script which would send it directly to the client via an email. 
+                                        Thus, firing a single command to run the script would perform all the morning checks, generate the report and 
+                                        send it to the client.</li>
+                                    <li>Ensured robustness of the created script, thereby allowing the same script to prepare the reports for multiple clients by fine-tuning it.</li>
+                                    <li>Reduced the time taken for preparation of morning checks reports significantly from 1 hour to a worst-case of less than 2 minutes per client. 
+                                        The worst-case time was due to the presence of such commands which on receiving no output for the terminal would continue to run for 30 seconds. 
+                                        On an average case, the script was competent enough to prepare the reports in less than 30 seconds.</li>
+                                    <li>Ensured that the created reports do not eat up the memory by suitably deleting old reports after a few days. The number of days for which 
+                                        the report has to be kept can be specified by the user. On execution, the script would check for old morning checks reports, delete them and then 
+                                        perform the checks.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tab-content" id="project-cds">
+                    <div class="row">
+                        <div class="col-10 col-lg-8 mx-auto">
+                            <div class="project-tabs-heading">
+                                <div class="d-md-none d-lg-block">
+                                    <h2>Dynamics and optimization of conventional distillation columns</h2>
+                                </div>
+                                <div class="d-md-block d-lg-none">
+                                    <h3>Dynamics and optimization of conventional distillation columns</h3>
+                                </div>
+                            </div>
+
+                            <div class="project-description-block">
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">A</h3>
+                                    <h5 class="project-description-heading-smaller">&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">B</h3>
+                                    <h5 class="project-description-heading-smaller">RIEF&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">O</h3>
+                                    <h5 class="project-description-heading-smaller">VERVIEW</h5>
+                                </div>
+
+                                <p class="project-description-content">
+                                    During my bachelor's project in 2019-20, I worked with a team of researchers from Energy and Process 
+                                    Engineering Laboratory, IIT Kharagpur. The team of researchers were working on various types of 
+                                    industrial distillation processes and working on ways to make the process more energy-efficient. 
+                                    It is a well-established fact that for multicomponent distillation involving <i>n</i> components, 
+                                    at least <i>n-1</i> distillation columns are needed to achieve the desired degree of purification. 
+                                    Hence, a ternary mixture requires at least two distillation units for its separation. A single 
+                                    distillation column itself demands energy in the range of 1-100 MW. Thus, the energy requirement 
+                                    for the separation of a ternary mixture itself using distillation is enormous. To add to that, 
+                                    95% of liquid separation processes use distillation as their primary method of separation, which 
+                                    are mostly conventional distillation units. Hence, the field of distillation presents itself with 
+                                    a high potential for possible energy savings. This project aimed at modelling a distillation system 
+                                    and obtaining an optimal operating configuration for a conventional distillation sequence involving 
+                                    two distillation units in series. The results from this project served as a minimum benchmark with  
+                                    which the results from other modifications of distillation units were compared.
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">O</h3>
+                                    <h5 class="project-description-heading-smaller">BJECTIVES</h5>
+                                </div>
+
+                                <p class="project-description-content" id="project-content-bottom">
+                                    The main objectives of the project were threefold:
+                                    <ul class="project-learnings" id="project-content-bottom">
+                                        <li>To develop a model of the conventional distillation sequence in series and integrate it with MATLAB</li>
+                                        <li>To develop a generalised multi-objective optimization problem to be solved across different systems</li>
+                                        <li>To use a non-dominated sorting genetic algorithm (NSGA-II) to obtain an optimal solution for the system</li>
+                                    </ul>
+                                    <p class="project-description-content">
+                                        Two ternary systems, Benzene - Toulene - Xylene (<i>BTX</i>) and Benzene - Toluene - Etyhlbenzene 
+                                        (<i>BTE</i>), with fixed feed conditions were chosen for the study. NSGA-II was employed to find 
+                                        an optimal solution.
+                                    </p>
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">T</h3>
+                                    <h5 class="project-description-heading-smaller">OOLS&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">U</h3>
+                                    <h5 class="project-description-heading-smaller">SED</h5>
+                                </div>
+
+                                <p class="project-description-content">
+                                    <div class="row">
+                                        <div class="col-9 col-lg-8">
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="project-table-left">Programming Language</th>
+                                                        <td class="project-table-right">MATLAB</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Modelling Tool</th>
+                                                        <td class="project-table-right">Aspen Plus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Interfacing Server</th>
+                                                        <td class="project-table-right">ActiveX</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Optimzation Algorithm</th>
+                                                        <td class="project-table-right">NSGA - II</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>      
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">G</h3>
+                                    <h5 class="project-description-heading-smaller">ENERALIZED&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">O</h3>
+                                    <h5 class="project-description-heading-smaller">PTIMIZATION&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">P</h3>
+                                    <h5 class="project-description-heading-smaller">ROBLEM</h5>
+                                </div>
+
+                                <p class="project-description-content">
+                                    The following generalised optimization problem was formulated, which was solved using NSGA-II
+                                    using the three step method described below.
+                                </p>
+
+                                <p class="project-description-content">
+                                    <i>Minimize Capital Cost</i><br/>
+                                    <i>Minimize Operating Cost</i><br/>
+                                    <i>Minimize CO<sub>2</sub> emission</i><br/>
+                                    <i>Maximize the top component recovery</i><br/>
+                                    <i>Maximize the middle/bottom component recovery</i><br/>
+                                    <i>subject to purity constraints</i><br/>
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">A</h3>
+                                    <h5 class="project-description-heading-smaller">CTIONS&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">T</h3>
+                                    <h5 class="project-description-heading-smaller">AKEN</h5>
+                                </div>
+
+                                <h5 class="project-content-header">Modelling the system and interfacing it</h5>
+                                <p class="project-description-content">
+                                    The conventional distillation sequence was modelled using the direct sequence in Aspen. Two different but 
+                                    non-independent RadFrac columns were employed in Aspen to model the system using the rigorous method of simulation.
+                                    The system modelled in Aspen was interfaced with MATLAB using the ActiveX server. MATLAB was used to generate 
+                                    all the inputs, which were sent to Aspen via the ActiveX server. The simulations were run and completed in Aspen, 
+                                    the results were prepared and MATLAB was notified about the completion of the simulation. The outputs were collected 
+                                    from Aspen and then used further.
+                                </p>
+
+                                <h5 class="project-content-header">Multi-objective optimization</h5>
+                                <p class="project-description-content">
+                                    To determine the decision variables which influence the objectives, sensitivity analysis was carried out. 
+                                    Different inputs were chosen and their correlation with all the objectives was found. The data points for 
+                                    determining the correlation coefficient were also generated through rigorous simulation in Aspen. From this, those 
+                                    variables that had a significant influence on any of the objective functions were chosen and the rest were discarded.
+                                    The results after simulation were fed as input to the NSGA-II algorithm to run the optimization and generate a pareto-optimal front.
+                                </p>
+
+                                <h5 class="project-content-header">Selection of one-optimal point</h5>
+                                <p class="project-description-content">
+                                    NSGA-II gives a set of optimal solutions, none of which is more dominating than the other. However, the determination of 
+                                    one condition out of the many generated remains an issue. Many methods have been suggested to do so. The technique for 
+                                    order of preference by similarity to ideal solution (<i>TOPSIS</i>) is one of the most straightforward and most practical 
+                                    techniques for the identification of a truly optimal solution from the set of non-dominated solutions and was used to
+                                    select one optimal point from the set of solutions. 
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">O</h3>
+                                    <h5 class="project-description-heading-smaller">PTIMIZATION&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">R</h3>
+                                    <h5 class="project-description-heading-smaller">ESULTS</h5>
+                                </div>
+
+                                <p class="project-description-content">
+                                    <div class="row">
+                                        <div class="col-9 col-lg-8">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Optimal Specification</th>
+                                                        <td scope="col" class="project-table-left"><b>BTX System</b></td>
+                                                        <td scope="col" class="project-table-left"><b>BTE System</b></td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Number of Trays</th>
+                                                        <td scope="col" class="project-table-right">51 + 50</td>
+                                                        <td scope="col" class="project-table-right">23 + 40</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Reboiler Heat Duty (kW)</th>
+                                                        <td scope="col" class="project-table-right">2484.65</td>
+                                                        <td scope="col" class="project-table-right">2954.76</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Capital Cost ($)</th>
+                                                        <td scope="col" class="project-table-right">919,548</td>
+                                                        <td scope="col" class="project-table-right">806,197</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Operating Cost ($/year)</th>
+                                                        <td scope="col" class="project-table-right">233,070</td>
+                                                        <td scope="col" class="project-table-right">256,523</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">CO<sub>2</sub> Emission (tons/year)</th>
+                                                        <td scope="col" class="project-table-right">5062.67</td>
+                                                        <td scope="col" class="project-table-right">5378.37</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>      
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">F</h3>
+                                    <h5 class="project-description-heading-smaller">UTURE&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">W</h3>
+                                    <h5 class="project-description-heading-smaller">ORK</h5>
+                                </div>
+
+                                <p class="project-description-content">
+                                    This project dealt with the multi-objective optimization of a conventional distillation sequence containing two distillation 
+                                    units in series. However, various alternatives have been suggested where the process can be carried out in a single column, thus 
+                                    leading to significant savings in capital cost, operating cost, as well as space. The steps post this work was to carry out the 
+                                    same process for one of the alternatives, the dividing wall column.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tab-content" id="project-dwc">
+                    <div class="row">
+                        <div class="col-10 col-lg-8 mx-auto">
+                            <div class="project-tabs-heading">
+                                <div class="d-md-none d-lg-block">
+                                    <h2>Multi-objective optimization of dividing wall columns</h2>
+                                </div>
+                                <div class="d-md-block d-lg-none">
+                                    <h3>Multi-objective optimization of dividing wall columns</h3>
+                                </div>
+                            </div>
+
+                            <div class="project-description-block">
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">A</h3>
+                                    <h5 class="project-description-heading-smaller">&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">B</h3>
+                                    <h5 class="project-description-heading-smaller">RIEF&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">O</h3>
+                                    <h5 class="project-description-heading-smaller">VERVIEW</h5>
+                                </div>
+
+                                <p class="project-description-content">
+                                    During my bachelor's project in 2019-20, I had worked on a project to optimize the configuration of a 
+                                    conventional distillation sequence involving two columns in series. The project on dividing wall columns 
+                                    (<i>DWC</i>) is an extension of that project. The dividing wall column is an intensified equipment that 
+                                    integrates the two columns of a conventional distillation column into a single shell. Hence, a ternary 
+                                    mixture separation is possible through a single column, compared to the conventional distillation sequence 
+                                    that requires two columns. Hence, the presence of a single column, reboiler and condenser allow it to 
+                                    deliver a large amount of savings in the operating and capital costs. Installing a <i>DWC</i> over two 
+                                    conventional units can lead to a huge reduction in the installation space as well. This project aimed at 
+                                    evaluating the potential savings if the conventional distillation sequence (<i>CDS</i>) was replaced with 
+                                    a dividing wall column.
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">O</h3>
+                                    <h5 class="project-description-heading-smaller">BJECTIVES</h5>
+                                </div>
+
+                                <p class="project-description-content" id="project-content-bottom">
+                                    The main objectives of the project were following:
+                                    <ul class="project-learnings" id="project-content-bottom">
+                                        <li>To develop a model of the dividing wall column in Aspen and integrate it with MATLAB</li>
+                                        <li>To use a non-dominated sorting genetic algorithm (NSGA-II) to obtain an optimal solution for the same systems 
+                                            using the same generalized optimization problem as in CDS.
+                                        </li>
+                                    </ul>
+                                    <p class="project-description-content">
+                                        The same two ternary systems, Benzene - Toulene - Xylene (<i>BTX</i>) and Benzene - Toluene - Etyhlbenzene 
+                                        (<i>BTE</i>), with the feed conditions similar to the previous study were chosen here as well.
+                                    </p>
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">T</h3>
+                                    <h5 class="project-description-heading-smaller">OOLS&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">U</h3>
+                                    <h5 class="project-description-heading-smaller">SED</h5>
+                                </div>
+
+                                <p class="project-description-content">
+                                    <div class="row">
+                                        <div class="col-9 col-lg-8">
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="project-table-left">Programming Language</th>
+                                                        <td class="project-table-right">MATLAB</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Modelling Tool</th>
+                                                        <td class="project-table-right">Aspen Plus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Interfacing Server</th>
+                                                        <td class="project-table-right">ActiveX</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Optimzation Algorithm</th>
+                                                        <td class="project-table-right">NSGA - II</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>      
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">G</h3>
+                                    <h5 class="project-description-heading-smaller">ENERALIZED&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">O</h3>
+                                    <h5 class="project-description-heading-smaller">PTIMIZATION&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">P</h3>
+                                    <h5 class="project-description-heading-smaller">ROBLEM</h5>
+                                </div>
+
+                                <p class="project-description-content">
+                                    The following generalised optimization problem, which was used for optimization of <i>CDS</i> 
+                                    was also used for the optimization of <i>DWC</i>.
+                                </p>
+
+                                <p class="project-description-content">
+                                    <i>Minimize Capital Cost</i><br/>
+                                    <i>Minimize Operating Cost</i><br/>
+                                    <i>Minimize CO<sub>2</sub> emission</i><br/>
+                                    <i>Maximize the top component recovery</i><br/>
+                                    <i>Maximize the middle/bottom component recovery</i><br/>
+                                    <i>subject to purity constraints</i><br/>
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">O</h3>
+                                    <h5 class="project-description-heading-smaller">PTIMIZATION&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">R</h3>
+                                    <h5 class="project-description-heading-smaller">ESULTS</h5>
+                                </div>
+
+                                <p class="project-description-content">
+                                    <div class="row">
+                                        <div class="col-9 col-lg-8">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Optimal Specification</th>
+                                                        <td scope="col" class="project-table-left"><b>BTX System</b></td>
+                                                        <td scope="col" class="project-table-left"><b>BTE System</b></td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Number of Trays</th>
+                                                        <td scope="col" class="project-table-right">20 + 47 + 17</td>
+                                                        <td scope="col" class="project-table-right">12 + 41 + 13</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Reboiler Heat Duty (kW)</th>
+                                                        <td scope="col" class="project-table-right">1602.23</td>
+                                                        <td scope="col" class="project-table-right">1625.84</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Capital Cost ($)</th>
+                                                        <td scope="col" class="project-table-right">708,957</td>
+                                                        <td scope="col" class="project-table-right">710,021</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Operating Cost ($/year)</th>
+                                                        <td scope="col" class="project-table-right">163,135</td>
+                                                        <td scope="col" class="project-table-right">140,940</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">CO<sub>2</sub> Emission (tons/year)</th>
+                                                        <td scope="col" class="project-table-right">3291.13</td>
+                                                        <td scope="col" class="project-table-right">2989.63</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>      
+                                </p>
+
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">P</h3>
+                                    <h5 class="project-description-heading-smaller">ERFORMANCE</h5>
+                                    <h3 class="project-description-heading-larger">I</h3>
+                                    <h5 class="project-description-heading-smaller">MPROVEMENT</h5>
+                                </div>
+
+                                <p class="project-description-content">
+                                    <div class="row">
+                                        <div class="col-9 col-lg-8">
+                                            <h5 class="project-content-header" id="project-table-content">Comparison for BTX system</h5>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Performance Metric</th>
+                                                        <td scope="col" class="project-table-left"><b>CDS</b></td>
+                                                        <td scope="col" class="project-table-left"><b>DWC</b></td>
+                                                        <td scope="col" class="project-table-left"><b>Percent Change</b></td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="project-table-left">Capital Cost ($)</th>
+                                                        <td class="project-table-right">919,548</td>
+                                                        <td class="project-table-right">708,957</td>
+                                                        <td class="project-table-right">22.9% decrease</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Operating Cost ($/year)</th>
+                                                        <td class="project-table-right">233,070</td>
+                                                        <td class="project-table-right">163,135</td>
+                                                        <td class="project-table-right">30% decrease</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">CO<sub>2</sub> Emission (tons/year)</th>
+                                                        <td class="project-table-right">5062.67</td>
+                                                        <td class="project-table-right">3291.13</td>
+                                                        <td class="project-table-right">35% decrease</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>      
+                                </p>
+
+                                <p class="project-description-content">
+                                    <div class="row">
+                                        <div class="col-9 col-lg-8">
+                                            <h5 class="project-content-header" id="project-table-content">Comparison for BTE system</h5>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Performance Metric</th>
+                                                        <td scope="col" class="project-table-left"><b>CDS</b></td>
+                                                        <td scope="col" class="project-table-left"><b>DWC</b></td>
+                                                        <td scope="col" class="project-table-left"><b>Percent Change</b></td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="project-table-left">Capital Cost ($)</th>
+                                                        <td class="project-table-right">806,197</td>
+                                                        <td class="project-table-right">710,021</td>
+                                                        <td class="project-table-right">11.93% decrease</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Operating Cost ($/year)</th>
+                                                        <td class="project-table-right">256,523</td>
+                                                        <td class="project-table-right">140,940</td>
+                                                        <td class="project-table-right">45.06% decrease</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">CO<sub>2</sub> Emission (tons/year)</th>
+                                                        <td class="project-table-right">5378.37</td>
+                                                        <td class="project-table-right">2989.63</td>
+                                                        <td class="project-table-right">44.41% decrease</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>      
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <h3 class="project-description-heading-larger">F</h3>
+                                    <h5 class="project-description-heading-smaller">UTURE&nbsp;</h5>
+                                    <h3 class="project-description-heading-larger">P</h3>
+                                    <h5 class="project-description-heading-smaller">ROSPECTS</h5>
+                                </div>
+
+                                <ul class="project-learnings">
+                                    <li>Retrofitting the obtained optimal configuration of conventional distillation sequence with vapour recompression</li>
+                                    <li>Using multi-objective optimization on a dividing wall column integrated with vapour recompression to find an optimal operating configuration</li>
+                                    <li>Improving the energy efficiency of the optimal configuration of dividing wall columns by using heat pumps through the Organic Rankine Cycle</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Tabs for small screen -->
+        <div class="container-fluid" id="project-container">
+            <div class="d-block d-md-none">
+                <div class="row py-auto" id="project-position-testing">
+                    <div class="col-12" id="project-tabs">
+                        <button class="project-tab-link-small" id="project-testing-copy-small" onclick="switchTabsSmall(event, 'testing')">
+                            Automation of test cases for a web application
+                        </button>
+
+                        <div class="project-icons" onclick="openTabFromCarousel('testing')">
+                            <i class="fa fa-plus project-icon-plus" id="project-icon-plus-testing"></i>
+                            <i class="fa fa-minus project-icon-minus" id="project-icon-minus-testing"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tab-content-small" id="project-testing-small">
+                    <div class="row">
+                        <div class="col-12 mx-auto">
+                            <div class="project-description-block-small">
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">A</h3>
+                                        <h5 class="project-description-heading-smaller">&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">B</h3>
+                                        <h5 class="project-description-heading-smaller">RIEF&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">O</h3>
+                                        <h5 class="project-description-heading-smaller">VERVIEW</h5>
+                                    </div>
+                                </div>
+
+                                <p class="project-description-content">
+                                    In the summer of 2019, I was hired as a software intern for Itiviti India Private Limited, where I worked on two projects. 
+                                    The organization develops software products to help financial institutions worldwide
+                                    with their trading practices. In an era where the capital markets are highly complex, 
+                                    automated trading operation is a highly complex business, where the lack of testing strategies 
+                                    has a huge impact. Managing test environments, with multiple test components, is costly 
+                                    and resource-intensive both in terms of staffing and technical infrastructure requirements. 
+                                    Firms may end up spending more time maintaining their complex testing 
+                                    environments than performing actual tests. VeriFIX Enterprise is a software application 
+                                    developed by Itviti which helps firms manage their testing environments. This project aimed 
+                                    at automating the test cases for the software application, VeriFIX Enterprise.
+                                </p>
+                                    
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">P</h3>
+                                        <h5 class="project-description-heading-smaller">ROJECT&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">P</h3>
+                                        <h5 class="project-description-heading-smaller">ROBLEM&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">S</h3>
+                                        <h5 class="project-description-heading-smaller">TATEMENT</h5>
+                                    </div>
+                                </div>
+
+                                <p class="project-description-content">
+                                    As the application of VeriFIX enterprise is constantly developing, upgrading and adding 
+                                    new features to it, proof testing of the upgrades and newer additions are necessary to find 
+                                    out the bugs and their removal. To test any software, manual testing is performed on 
+                                    the newly upgraded components, which is followed by automated testing of the complete software. 
+                                    For certain components, the manual testing part had been completed, and the test cases needed 
+                                    to be automated to fasten the process of testing in further deployments. The task assigned to 
+                                    me was to validate the working of a filter criteria button in the web application
+                                    and generate test cases for the same.
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">T</h3>
+                                        <h5 class="project-description-heading-smaller">OOLS&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">U</h3>
+                                        <h5 class="project-description-heading-smaller">SED</h5>
+                                    </div>
+                                </div>
+
+                                <p class="project-description-content">
+                                    <div class="row">
+                                        <div class="col-12" id="project-table-overflow">
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="project-table-left">Developing Environment</th>
+                                                        <td class="project-table-right">Eclipse</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Programming Language</th>
+                                                        <td class="project-table-right">Java</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Testing Framework</th>
+                                                        <td class="project-table-right">JUnit</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Automation Driver</th>
+                                                        <td class="project-table-right">Selenium Web Driver</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Other Tools</th>
+                                                        <td class="project-table-right">Git</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>      
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">A</h3>
+                                        <h5 class="project-description-heading-smaller">CTIONS&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">T</h3>
+                                        <h5 class="project-description-heading-smaller">AKEN</h5>
+                                    </div>
+                                </div>
+                                
+                                <p class="project-description-content">
+                                    To test the filter criteria button, the first step was logging in to the web application. To 
+                                    automate this step, the Selenium web driver was used to log in and perform all the 
+                                    navigational tasks that had to be performed before the actual test started. The code for 
+                                    performing all these tasks was kept in the proper annotation of the JUnit Test Case so that 
+                                    these tasks would run at the beginning. Before applying the filter, all the messages were extracted 
+                                    and those which had the desired filter present in them were counted. The count was stored. The next step was to apply 
+                                    the filter and count the total number of messages present. If this number matched with the number 
+                                    stored, this part of the test would be a success, else it would fail and indicate that 
+                                    the filter criteria button wasn't working properly. An additional condition was added to further 
+                                    validate the button, which was to check if every message in the message box after application of 
+                                    filter criteria contained the desired filter or not. The first condition ensured that no messages were 
+                                    missed out after the application of the filter, while the second condition ensured that no messages that 
+                                    shouldn't be present appeared in the message box. If both the conditions passed successfully, the test passed,
+                                    indicating that the filter criteria button was working properly. If any of the above conditions failed, the test 
+                                    would fail and indicate some error in the working of the filter criteria button.
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">K</h3>
+                                        <h5 class="project-description-heading-smaller">EY&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">L</h3>
+                                        <h5 class="project-description-heading-smaller">EARNINGS</h5>
+                                    </div>
+                                </div>
+                    
+                                <ul class="project-learnings">
+                                    <li>Understood the process of software testing and the reasons for its automation</li>
+                                    <li>Learnt a new programming language Java and a testing framework JUnit associated with it</li>
+                                    <li>Learnt the usage of Selenium Web Driver to extract data out from the web</li>
+                                    <li>Got to know the Git version control workflow and its usage to track changes in a file system</li>
+                                </ul>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-auto" id="project-position-automation">
+                    <div class="col-12" id="project-tabs">
+                        <button class="project-tab-link-small" id="project-automation-copy-small" onclick="switchTabsSmall(event, 'automation')">
+                            Automation of daily checks for a package
+                        </button>
+
+                        <div class="project-icons" onclick="openTabFromCarousel('automation')">
+                            <i class="fa fa-plus project-icon-plus" id="project-icon-plus-automation"></i>
+                            <i class="fa fa-minus project-icon-minus" id="project-icon-minus-automation"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tab-content-small" id="project-automation-small">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="project-description-block-small">
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">A</h3>
+                                        <h5 class="project-description-heading-smaller">&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">B</h3>
+                                        <h5 class="project-description-heading-smaller">RIEF&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">O</h3>
+                                        <h5 class="project-description-heading-smaller">VERVIEW</h5>
+                                    </div>
+                                </div>
+
+                                <p class="project-description-content">
+                                    In the summer of 2019, I worked as a software intern for Itiviti India Private Limited, 
+                                    where I worked on two projects. The organization develops software products to help financial 
+                                    institutions worldwide with their trading practices. One of their products was the Itiviti 
+                                    Analyst package. It is a package consisting of a suite of apps, sessions, disks as well as 
+                                    databases which ensures that the various trading practices followed by its various clients 
+                                    comply with various trade regulations. Morning checks are a series of checks being done daily 
+                                    to ensure the proper implementation of the Itiviti Analyst package. This project aimed at automating 
+                                    the manual process of morning checks.
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">P</h3>
+                                        <h5 class="project-description-heading-smaller">ROJECT&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">P</h3>
+                                        <h5 class="project-description-heading-smaller">ROBLEM&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">S</h3>
+                                        <h5 class="project-description-heading-smaller">TATEMENT</h5>
+                                    </div>
+                                </div>
+
+                                <p class="project-description-content">
+                                    The Itiviti Analyst package is implemented on the client-side of the server. Post-implementation, 
+                                    the team ensures that all the apps run correctly, checks whether all the sessions 
+                                    are appropriately configured and verifies if the data collection is happening correctly. 
+                                    To ensure this, a series of checks were done daily, which are known as morning checks. 
+                                    The entire process of morning checks consists of 10 components, which were performed one after the 
+                                    other. This was followed by the preparation of a report that contained the results and summary of 
+                                    the checks. This report was sent to the client via email. This process of performing the checks 
+                                    and preparing the reports was being carried out manually for every client. Only the process of 
+                                    sending email had already been automated. The entire process, from performing the check to 
+                                    sending the email used to take around 1 to 1.5 hours per client. The task assigned to me was 
+                                    to automate the processes of performing the checks and preparing the reports so that it could be 
+                                    seamlessly integrated with the existing script which sent the email.
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">T</h3>
+                                        <h5 class="project-description-heading-smaller">HE&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">M</h3>
+                                        <h5 class="project-description-heading-smaller">ANUAL&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">P</h3>
+                                        <h5 class="project-description-heading-smaller">ROCESS</h5>
+                                    </div>
+                                </div>
+
+                                <p class="project-description-content">
+                                    For performing the checks, the tester had to login into the client-side of the server through a remote 
+                                    access connection. The server was a Linux server and the software PuTTY was used for this purpose. 
+                                    After having remote access to the server, the tester had to login into the database containing 
+                                    the details of all the package components configured for the client. The status of all the components 
+                                    can be known from the database. Then, corresponding to each of the 10 components of the morning checks, 
+                                    a series of commands were fired from the terminal. The output from every command was collected manually
+                                    and stored. 
+                                    These outputs were combined and accordingly processed to generate the result of the particular component. 
+                                    The results were integrated into a file to prepare the report.
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">A</h3>
+                                        <h5 class="project-description-heading-smaller">CTIONS&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">T</h3>
+                                        <h5 class="project-description-heading-smaller">AKEN</h5>
+                                    </div>
+                                </div>
+
+                                <h5 class="project-content-header">Selection of a suitable library</h5>
+                                <p class="project-description-content" id="project-content-bottom">
+                                    The basic idea behind the automation of morning checks was to replicate the process being carried 
+                                    out manually. Since the manual process included the firing of commands into the Linux terminal, a 
+                                    library had to be chosen which could fire commands into the terminal from the script itself and 
+                                    collect the output. Various Python libraries are available which allow the user to interact with 
+                                    the command line. Some notable ones among them are Python Fire, subprocess, threading, multithreading 
+                                    and multiprocessing libraries. For choosing the appropriate library, the following points had to be considered:
+                                    <ul class="project-learnings" id="project-content-bottom">
+                                        <li>The library must allow the creation and running of a new process from the script itself</li>
+                                        <li>The library must check the output of the process i.e., whether the command successfully ran or not</li>
+                                        <li>The library must be able to collect the output of the command displayed on the terminal and save it in a file</li>
+                                        <li>The library must be present in Python 2.7, which was the version of Python being used on the server at that time</li>
+                                    </ul>
+                                    <p class="project-description-content">
+                                        Considering these points, the subprocess library was chosen as it satisfied all of them.
+                                    </p>
+                                </p>
+
+                                <h5 class="project-content-header">Automating the components of the checks</h5>
+                                <p class="project-description-content">
+                                    After a suitable library was chosen, the next task was to write a script to automate each component 
+                                    of the morning checks. For every component, one or more commands were fired into the terminal using 
+                                    the subprocess library. Depending upon the commands and the requirements, either the output of the 
+                                    process (whether the process ran successfully or not) or the output displayed by the command on the 
+                                    terminal was collected. This output was stored in a text file and the required processing related 
+                                    to the component of the check was performed.
+                                </p>
+
+                                <h5 class="project-content-header">Preparation of morning checks report</h5>
+                                <p class="project-description-content">
+                                    The report of morning checks was prepared in two formats. One was a regular .txt file and the other one 
+                                    was a .html file. At the beginning of the script, an empty .txt/.html file was created. After processing 
+                                    the outputs from the terminal, the results were appended to the .txt file. In the case of the .html file, 
+                                    appropriate tags were inserted at appropriate locations to ensure the proper formatting of the report.
+                                </p>
+
+                                <h5 class="project-content-header">Handling exceptions during runtime</h5>
+                                <p class="project-description-content">
+                                    The biggest issue during the automation of morning checks was the handling of exceptions. The entire process 
+                                    of morning checks was being carried out on a real-time operating server. The server being dynamic was bound 
+                                    to cause misfunctioning of commands at certain times. All the commands in the script 
+                                    were being fired in series. Hence, the termination or misfunctioning of a single command would lead to the 
+                                    termination of the entire script. To avoid this, exception handling was needed. This was achieved 
+                                    by carefully examining the piece of code for possible sources where termination of the script could take place. 
+                                    To handle these exceptions, a try-except block was used for every possible case. The except block was 
+                                    carefully designed to ensure that the script doesn't terminate due to the non-functioning of commands.
+                                </p>
+
+                                <h5 class="project-content-header">Ensuring robustness of the created script</h5>
+                                <p class="project-description-content">
+                                    The most important part of the project was to ensure the robustness of the script. This was done to ensure 
+                                    that the same script could be used for different clients by making minimal changes to it. The different variables for a client were stored in different lists, each 
+                                    corresponding to a different command, at the top of the script. While execution, the script would take values from the 
+                                    list, insert them at the appropriate position in the command and then fire it. Hence, the process of modifying the script 
+                                    for different clients reduced down to suitably manipulating the different lists for a particular client. The script was 
+                                    designed to take care of the rest. 
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">K</h3>
+                                        <h5 class="project-description-heading-smaller">EY&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">C</h3>
+                                        <h5 class="project-description-heading-smaller">ONTRIBUTIONS</h5>
+                                    </div>
+                                </div>
+                    
+                                <ul class="project-learnings">
+                                    <li>Created a Python script that performs all the components of the morning checks and generates the report in .txt format.</li>
+                                    <li>Created another Python script that performs the morning checks and generates the reports in .html format. This report could be 
+                                        easily integrated with another existing Python script which would send it directly to the client via an email. 
+                                        Thus, firing a single command to run the script would perform all the morning checks, generate the report and 
+                                        send it to the client.</li>
+                                    <li>Ensured robustness of the created script, thereby allowing the same script to prepare the reports for multiple clients by fine-tuning it.</li>
+                                    <li>Reduced the time taken for preparation of morning checks reports significantly from 1 hour to a worst-case of less than 2 minutes per client. 
+                                        The worst-case time was due to the presence of such commands which on receiving no output for the terminal would continue to run for 30 seconds. 
+                                        On an average case, the script was competent enough to prepare the reports in less than 30 seconds.</li>
+                                    <li>Ensured that the created reports do not eat up the memory by suitably deleting old reports after a few days. The number of days for which 
+                                        the report has to be kept can be specified by the user. On execution, the script would check for old morning checks reports, delete them and then 
+                                        perform the checks.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-auto" id="project-position-cds">
+                    <div class="col-12" id="project-tabs">
+                        <button class="project-tab-link-small" id="project-cds-copy-small" onclick="switchTabsSmall(event, 'cds')">
+                            Dynamics and optimization of conventional distillation columns
+                        </button>
+
+                        <div class="project-icons" onclick="openTabFromCarousel('cds')">
+                            <i class="fa fa-plus project-icon-plus" id="project-icon-plus-cds"></i>
+                            <i class="fa fa-minus project-icon-minus" id="project-icon-minus-cds"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tab-content-small" id="project-cds-small">
+                    <div class="row">
+                        <div class="col-12 mx-auto">
+                            <div class="project-description-block-small">
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">A</h3>
+                                        <h5 class="project-description-heading-smaller">&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">B</h3>
+                                        <h5 class="project-description-heading-smaller">RIEF&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">O</h3>
+                                        <h5 class="project-description-heading-smaller">VERVIEW</h5>
+                                    </div>
+                                </div>
+
+                                <p class="project-description-content">
+                                    During my bachelor's project in 2019-20, I worked with a team of researchers from Energy and Process 
+                                    Engineering Laboratory, IIT Kharagpur. The team of researchers were working on various types of 
+                                    industrial distillation processes and working on ways to make the process more energy-efficient. 
+                                    It is a well-established fact that for multicomponent distillation involving <i>n</i> components, 
+                                    at least <i>n-1</i> distillation columns are needed to achieve the desired degree of purification. 
+                                    Hence, a ternary mixture requires at least two distillation units for its separation. A single 
+                                    distillation column itself demands energy in the range of 1-100 MW. Thus, the energy requirement 
+                                    for the separation of a ternary mixture itself using distillation is enormous. To add to that, 
+                                    95% of liquid separation processes use distillation as their primary method of separation, which 
+                                    are mostly conventional distillation units. Hence, the field of distillation presents itself with 
+                                    a high potential for possible energy savings. This project aimed at modelling a distillation system 
+                                    and obtaining an optimal operating configuration for a conventional distillation sequence involving 
+                                    two distillation units in series. The results from this project served as a minimum benchmark with  
+                                    which the results from other modifications of distillation units were compared.
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">O</h3>
+                                        <h5 class="project-description-heading-smaller">BJECTIVES</h5>
+                                    </div>
+                                </div>
+
+                                <p class="project-description-content" id="project-content-bottom">
+                                    The main objectives of the project were threefold:
+                                    <ul class="project-learnings" id="project-content-bottom">
+                                        <li>To develop a model of the conventional distillation sequence in series and integrate it with MATLAB</li>
+                                        <li>To develop a generalised multi-objective optimization problem to be solved across different systems</li>
+                                        <li>To use a non-dominated sorting genetic algorithm (NSGA-II) to obtain an optimal solution for the system</li>
+                                    </ul>
+                                    <p class="project-description-content">
+                                        Two ternary systems, Benzene - Toulene - Xylene (<i>BTX</i>) and Benzene - Toluene - Etyhlbenzene 
+                                        (<i>BTE</i>), with fixed feed conditions were chosen for the study. NSGA-II was employed to find 
+                                        an optimal solution.
+                                    </p>
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">T</h3>
+                                        <h5 class="project-description-heading-smaller">OOLS&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">U</h3>
+                                        <h5 class="project-description-heading-smaller">SED</h5>
+                                    </div>
+                                </div>
+
+                                <p class="project-description-content">
+                                    <div class="row">
+                                        <div class="col-12" id="project-table-overflow">
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="project-table-left">Programming Language</th>
+                                                        <td class="project-table-right">MATLAB</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Modelling Tool</th>
+                                                        <td class="project-table-right">Aspen Plus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Interfacing Server</th>
+                                                        <td class="project-table-right">ActiveX</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Optimzation Algorithm</th>
+                                                        <td class="project-table-right">NSGA - II</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>      
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">G</h3>
+                                        <h5 class="project-description-heading-smaller">ENERALIZED&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">O</h3>
+                                        <h5 class="project-description-heading-smaller">PTIMIZATION&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">P</h3>
+                                        <h5 class="project-description-heading-smaller">ROBLEM</h5>
+                                    </div>
+                                </div>
+
+                                <p class="project-description-content">
+                                    The following generalised optimization problem was formulated, which was solved using NSGA-II
+                                    using the three step method described below.
+                                </p>
+
+                                <p class="project-description-content">
+                                    <i>Minimize Capital Cost</i><br/>
+                                    <i>Minimize Operating Cost</i><br/>
+                                    <i>Minimize CO<sub>2</sub> emission</i><br/>
+                                    <i>Maximize the top component recovery</i><br/>
+                                    <i>Maximize the middle/bottom component recovery</i><br/>
+                                    <i>subject to purity constraints</i><br/>
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">A</h3>
+                                        <h5 class="project-description-heading-smaller">CTIONS&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">T</h3>
+                                        <h5 class="project-description-heading-smaller">AKEN</h5>
+                                    </div>
+                                </div>
+
+                                <h5 class="project-content-header">Modelling the system and interfacing it</h5>
+                                <p class="project-description-content">
+                                    The conventional distillation sequence was modelled using the direct sequence in Aspen. Two different but 
+                                    non-independent RadFrac columns were employed in Aspen to model the system using the rigorous method of simulation.
+                                    The system modelled in Aspen was interfaced with MATLAB using the ActiveX server. MATLAB was used to generate 
+                                    all the inputs, which were sent to Aspen via the ActiveX server. The simulations were run and completed in Aspen, 
+                                    the results were prepared and MATLAB was notified about the completion of the simulation. The outputs were collected 
+                                    from Aspen and then used further.
+                                </p>
+
+                                <h5 class="project-content-header">Multi-objective optimization</h5>
+                                <p class="project-description-content">
+                                    To determine the decision variables which influence the objectives, sensitivity analysis was carried out. 
+                                    Different inputs were chosen and their correlation with all the objectives was found. The data points for 
+                                    determining the correlation coefficient were also generated through rigorous simulation in Aspen. From this, those 
+                                    variables that had a significant influence on any of the objective functions were chosen and the rest were discarded.
+                                    The results after simulation were fed as input to the NSGA-II algorithm to run the optimization and generate a pareto-optimal front.
+                                </p>
+
+                                <h5 class="project-content-header">Selection of one-optimal point</h5>
+                                <p class="project-description-content">
+                                    NSGA-II gives a set of optimal solutions, none of which is more dominating than the other. However, the determination of 
+                                    one condition out of the many generated remains an issue. Many methods have been suggested to do so. The technique for 
+                                    order of preference by similarity to ideal solution (<i>TOPSIS</i>) is one of the most straightforward and most practical 
+                                    techniques for the identification of a truly optimal solution from the set of non-dominated solutions and was used to
+                                    select one optimal point from the set of solutions. 
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">O</h3>
+                                        <h5 class="project-description-heading-smaller">PTIMIZATION&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">R</h3>
+                                        <h5 class="project-description-heading-smaller">ESULTS</h5>
+                                    </div>
+                                </div>
+
+                                <p class="project-description-content">
+                                    <div class="row">
+                                        <div class="col-12" id="project-table-small">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Optimal Specification</th>
+                                                        <td scope="col" class="project-table-left"><b>BTX System</b></td>
+                                                        <td scope="col" class="project-table-left"><b>BTE System</b></td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Number of Trays</th>
+                                                        <td scope="col" class="project-table-right">51 + 50</td>
+                                                        <td scope="col" class="project-table-right">23 + 40</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Reboiler Heat Duty (kW)</th>
+                                                        <td scope="col" class="project-table-right">2484.65</td>
+                                                        <td scope="col" class="project-table-right">2954.76</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Capital Cost ($)</th>
+                                                        <td scope="col" class="project-table-right">919,548</td>
+                                                        <td scope="col" class="project-table-right">806,197</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Operating Cost ($/year)</th>
+                                                        <td scope="col" class="project-table-right">233,070</td>
+                                                        <td scope="col" class="project-table-right">256,523</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">CO<sub>2</sub> Emission (tons/year)</th>
+                                                        <td scope="col" class="project-table-right">5062.67</td>
+                                                        <td scope="col" class="project-table-right">5378.37</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>      
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">F</h3>
+                                        <h5 class="project-description-heading-smaller">UTURE&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">W</h3>
+                                        <h5 class="project-description-heading-smaller">ORK</h5>
+                                    </div>
+                                </div>
+
+                                <p class="project-description-content">
+                                    This project dealt with the multi-objective optimization of a conventional distillation sequence containing two distillation 
+                                    units in series. However, various alternatives have been suggested where the process can be carried out in a single column, thus 
+                                    leading to significant savings in capital cost, operating cost, as well as space. The steps post this work was to carry out the 
+                                    same process for one of the alternatives, the dividing wall column.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-auto" id="project-position-dwc">
+                    <div class="col-12 my-auto" id="project-tabs">
+                        <button class="project-tab-link-small" id="project-dwc-copy-small" onclick="switchTabsSmall(event, 'dwc')">
+                            Multi-objective optimization of dividing wall columns
+                        </button>
+
+                        <div class="project-icons" onclick="openTabFromCarousel('dwc')">
+                            <i class="fa fa-plus project-icon-plus" id="project-icon-plus-dwc"></i>
+                            <i class="fa fa-minus project-icon-minus" id="project-icon-minus-dwc"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tab-content-small" id="project-dwc-small">
+                    <div class="row">
+                        <div class="col-12 mx-auto">
+                            <div class="project-description-block-small">
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">A</h3>
+                                        <h5 class="project-description-heading-smaller">&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">B</h3>
+                                        <h5 class="project-description-heading-smaller">RIEF&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">O</h3>
+                                        <h5 class="project-description-heading-smaller">VERVIEW</h5>
+                                    </div>
+                                </div>
+
+                                <p class="project-description-content">
+                                    During my bachelor's project in 2019-20, I had worked on a project to optimize the configuration of a 
+                                    conventional distillation sequence involving two columns in series. The project on dividing wall columns 
+                                    (<i>DWC</i>) is an extension of that project. The dividing wall column is an intensified equipment that 
+                                    integrates the two columns of a conventional distillation column into a single shell. Hence, a ternary 
+                                    mixture separation is possible through a single column, compared to the conventional distillation sequence 
+                                    that requires two columns. Hence, the presence of a single column, reboiler and condenser allow it to 
+                                    deliver a large amount of savings in the operating and capital costs. Installing a <i>DWC</i> over two 
+                                    conventional units can lead to a huge reduction in the installation space as well. This project aimed at 
+                                    evaluating the potential savings if the conventional distillation sequence (<i>CDS</i>) was replaced with 
+                                    a dividing wall column.
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">O</h3>
+                                        <h5 class="project-description-heading-smaller">BJECTIVES</h5>
+                                    </div>
+                                </div>
+
+                                <p class="project-description-content" id="project-content-bottom">
+                                    The main objectives of the project were following:
+                                    <ul class="project-learnings" id="project-content-bottom">
+                                        <li>To develop a model of the dividing wall column in Aspen and integrate it with MATLAB</li>
+                                        <li>To use a non-dominated sorting genetic algorithm (NSGA-II) to obtain an optimal solution for the same systems 
+                                            using the same generalized optimization problem as in CDS.
+                                        </li>
+                                    </ul>
+                                    <p class="project-description-content">
+                                        The same two ternary systems, Benzene - Toulene - Xylene (<i>BTX</i>) and Benzene - Toluene - Etyhlbenzene 
+                                        (<i>BTE</i>), with the feed conditions similar to the previous study were chosen here as well.
+                                    </p>
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">T</h3>
+                                        <h5 class="project-description-heading-smaller">OOLS&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">U</h3>
+                                        <h5 class="project-description-heading-smaller">SED</h5>
+                                    </div>
+                                </div>
+
+                                <p class="project-description-content">
+                                    <div class="row">
+                                        <div class="col-12" id="project-table-overflow">
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="project-table-left">Programming Language</th>
+                                                        <td class="project-table-right">MATLAB</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Modelling Tool</th>
+                                                        <td class="project-table-right">Aspen Plus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Interfacing Server</th>
+                                                        <td class="project-table-right">ActiveX</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="project-table-left">Optimzation Algorithm</th>
+                                                        <td class="project-table-right">NSGA - II</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>      
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">G</h3>
+                                        <h5 class="project-description-heading-smaller">ENERALIZED&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">O</h3>
+                                        <h5 class="project-description-heading-smaller">PTIMIZATION&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">P</h3>
+                                        <h5 class="project-description-heading-smaller">ROBLEM</h5>
+                                    </div>
+                                </div>
+
+                                <p class="project-description-content">
+                                    The following generalised optimization problem, which was used for optimization of <i>CDS</i> 
+                                    was also used for the optimization of <i>DWC</i>.
+                                </p>
+
+                                <p class="project-description-content">
+                                    <i>Minimize Capital Cost</i><br/>
+                                    <i>Minimize Operating Cost</i><br/>
+                                    <i>Minimize CO<sub>2</sub> emission</i><br/>
+                                    <i>Maximize the top component recovery</i><br/>
+                                    <i>Maximize the middle/bottom component recovery</i><br/>
+                                    <i>subject to purity constraints</i><br/>
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">O</h3>
+                                        <h5 class="project-description-heading-smaller">PTIMIZATION&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">R</h3>
+                                        <h5 class="project-description-heading-smaller">ESULTS</h5>
+                                    </div>
+                                </div>
+
+                                <p class="project-description-content">
+                                    <div class="row">
+                                        <div class="col-12" id="project-table-small">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Optimal Specification</th>
+                                                        <td scope="col" class="project-table-left"><b>BTX System</b></td>
+                                                        <td scope="col" class="project-table-left"><b>BTE System</b></td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Number of Trays</th>
+                                                        <td scope="col" class="project-table-right">20 + 47 + 17</td>
+                                                        <td scope="col" class="project-table-right">12 + 41 + 13</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Reboiler Heat Duty (kW)</th>
+                                                        <td scope="col" class="project-table-right">1602.23</td>
+                                                        <td scope="col" class="project-table-right">1625.84</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Capital Cost ($)</th>
+                                                        <td scope="col" class="project-table-right">708,957</td>
+                                                        <td scope="col" class="project-table-right">710,021</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">Operating Cost ($/year)</th>
+                                                        <td scope="col" class="project-table-right">163,135</td>
+                                                        <td scope="col" class="project-table-right">140,940</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="project-table-left">CO<sub>2</sub> Emission (tons/year)</th>
+                                                        <td scope="col" class="project-table-right">3291.13</td>
+                                                        <td scope="col" class="project-table-right">2989.63</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>      
+                                </p>
+
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">P</h3>
+                                        <h5 class="project-description-heading-smaller">ERFORMANCE</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">I</h3>
+                                        <h5 class="project-description-heading-smaller">MPROVEMENT</h5>
+                                    </div>
+                                </div>
+
+                                <p class="project-description-content">
+                                    <div class="row">
+                                        <div class="col-12" id="project-container">
+                                            <h5 class="project-content-header" id="project-table-content">Comparison for BTX system</h5>
+                                            <div id="project-table-small">
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col" class="project-table-left">Performance Metric</th>
+                                                            <td scope="col" class="project-table-left"><b>CDS</b></td>
+                                                            <td scope="col" class="project-table-left"><b>DWC</b></td>
+                                                            <td scope="col" class="project-table-left"><b>Percent Change</b></td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="project-table-left">Capital Cost ($)</th>
+                                                            <td class="project-table-right">919,548</td>
+                                                            <td class="project-table-right">708,957</td>
+                                                            <td class="project-table-right">22.9% decrease</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="project-table-left">Operating Cost ($/year)</th>
+                                                            <td class="project-table-right">233,070</td>
+                                                            <td class="project-table-right">163,135</td>
+                                                            <td class="project-table-right">30% decrease</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="project-table-left">CO<sub>2</sub> Emission (tons/year)</th>
+                                                            <td class="project-table-right">5062.67</td>
+                                                            <td class="project-table-right">3291.13</td>
+                                                            <td class="project-table-right">35% decrease</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                </p>
+
+                                <p class="project-description-content">
+                                    <div class="row">
+                                        <div class="col-12" id="project-container">
+                                            <h5 class="project-content-header" id="project-table-content">Comparison for BTE system</h5>
+                                            <div id="project-table-small">
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col" class="project-table-left">Performance Metric</th>
+                                                            <td scope="col" class="project-table-left"><b>CDS</b></td>
+                                                            <td scope="col" class="project-table-left"><b>DWC</b></td>
+                                                            <td scope="col" class="project-table-left"><b>Percent Change</b></td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="project-table-left">Capital Cost ($)</th>
+                                                            <td class="project-table-right">806,197</td>
+                                                            <td class="project-table-right">710,021</td>
+                                                            <td class="project-table-right">11.93% decrease</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="project-table-left">Operating Cost ($/year)</th>
+                                                            <td class="project-table-right">256,523</td>
+                                                            <td class="project-table-right">140,940</td>
+                                                            <td class="project-table-right">45.06% decrease</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="project-table-left">CO<sub>2</sub> Emission (tons/year)</th>
+                                                            <td class="project-table-right">5378.37</td>
+                                                            <td class="project-table-right">2989.63</td>
+                                                            <td class="project-table-right">44.41% decrease</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>   
+                                        </div>
+                                    </div>      
+                                </p>
+
+                                <div class="project-description-heading">
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">F</h3>
+                                        <h5 class="project-description-heading-smaller">UTURE&nbsp;</h5>
+                                    </div>
+
+                                    <div class="project-heading-display">
+                                        <h3 class="project-description-heading-larger">P</h3>
+                                        <h5 class="project-description-heading-smaller">ROSPECTS</h5>
+                                    </div>
+                                </div>
+
+                                <ul class="project-learnings">
+                                    <li>Retrofitting the obtained optimal configuration of conventional distillation sequence with vapour recompression</li>
+                                    <li>Using multi-objective optimization on a dividing wall column integrated with vapour recompression to find an optimal operating configuration</li>
+                                    <li>Improving the energy efficiency of the optimal configuration of dividing wall columns by using heat pumps through the Organic Rankine Cycle</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-sm-6">
+                        <h5 class="footer-heading">Links</h5>
+                        <ul class="footer-bullets">
+                            <li><a href="home.html" class="footer-link">Home</a></li>
+                            <li><a href="about.html" class="footer-link">Bio</a></li>
+                            <li><a href="hobbies.html" class="footer-link">Hobbies</a></li>
+                            <li><a href="contact.html" class="footer-link">Leave a Review</a></li>
+                        </ul>    
+                    </div>
+
+                    <div class="col-8 col-sm-6">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="footer-heading">Contact</h5>
+                            </div>
+                            
+                            <div class="col-8 col-sm-2">
+                                <i class="fas fa-map-marker-alt icon"></i>
+                            </div>
+                            
+                            <div class="col-12 col-sm-10">
+                                <h6 class="footer-text">
+                                    Qtr. No. D-30/2 <br>
+                                    Jindal nagar Colony, JSPL <br>
+                                    Angul, Odisha <br>
+                                </h6>
+                            </div>
+
+                            <div class="col-8 col-sm-2">
+                                <i class="fas fa-envelope icon"></i>
+                            </div>
+                            
+                            <div class="col-12 col-sm-10 d-block d-md-none" style="overflow-x: scroll;">
+                                <h6 class="footer-text">
+                                    shubhamraj465@gmail.com
+                                </h6>
+                            </div>
+
+                            <div class="col-12 col-sm-10 d-none d-md-block">
+                                <h6 class="footer-text">
+                                    shubhamraj465@gmail.com
+                                </h6>
+                            </div>
+                            
+                            <div class="col-8 col-sm-2">
+                                <i class="fas fa-phone-alt icon"></i>
+                            </div>
+                            
+                            <div class="col-12 col-sm-10">
+                                <h6 class="footer-text">
+                                    +91-7674045435
+                                </h6>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Linking the required javascript files -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="javascript/alignment.js"></script>
+        <script src="javascript/changeTheme.js"></script>
+        <script src="javascript/tabSwitch.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", alignNav());
+            document.addEventListener("DOMContentLoaded", loadTheme());
+            document.addEventListener("DOMContentLoaded", alignIcons());
+        </script>
+    </body>
+</html>

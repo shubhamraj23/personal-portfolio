@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required Meta Tags For Responsiveness -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Linking the required stylesheets -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="css/layout.css">
+        <link rel="stylesheet" type="text/css" href="css/light-theme.css" id="page-theme">
+        
+        <!-- Adding the title and the icon -->
+        <title>My Personal Portfolio</title>
+        <link rel="icon" href="images/home-image.jpg" type="image/x-icon">
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar fixed-top navbar-expand-md">
+            <div class="container mx-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="fa fa-bars"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a class="nav-link" href="#" id="active-link">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Bio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Leave a Review</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-block d-md-none">
+                    <div class="toggle-icon-sun" id="toggle-icon-sun-small" onclick="iconThemeSwitch('light')">
+                        <i class="fas fa-sun fa-lg"></i>
+                    </div>
+
+                    <label class="toggle-switch" id="toggle-switch-small">
+                        <input type="checkbox" id="toggle-click-small" onclick="switchTheme()">
+                        <span class="toggle-slider"></span>
+                    </label>
+
+                    <div class="toggle-icon-moon" id="toggle-icon-moon-small" onclick="iconThemeSwitch('dark')">
+                        <i class="fas fa-moon fa-lg"></i>
+                    </div>
+                </div>
+
+                <div class="d-none d-md-block">
+                    <div class="toggle-icon-sun" id="toggle-icon-sun-large" onclick="iconThemeSwitch('light')">
+                        <i class="fas fa-sun fa-lg"></i>
+                    </div>
+
+                    <label class="toggle-switch" id="toggle-switch-large">
+                        <input type="checkbox" id="toggle-click-large" onclick="switchTheme()">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    
+                    <div class="toggle-icon-moon" id="toggle-icon-moon-large" onclick="iconThemeSwitch('dark')">
+                        <i class="fas fa-moon fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Welcome Section -->
+        <div class="welcome">
+            <div class="container-fluid">
+                <div class="row mx-auto">
+                    <div class="col-6 offset-3 col-sm-4 offset-sm-4 col-lg-2 offset-lg-5">
+                        <img src="images/home-image.jpg" class="img-fluid img-thumbnail" id="home-image" alt="My Favorite Pic">
+                    </div>
+                </div>
+    
+                <div class="row mx-auto">
+                    <div class="d-block d-sm-none mx-auto welcome-text">
+                        <h4>Hello! My name is Shubham</h4>
+                    </div>
+                    <div class="d-none d-sm-block d-md-none mx-auto welcome-text">
+                        <h3>Hello! My name is Shubham</h3>
+                    </div>
+                    <div class="d-none d-md-block mx-auto welcome-text">
+                        <h1>Hello! My name is Shubham</h1>
+                    </div>
+                </div>
+    
+                <div class="row mx-auto">
+                    <div class="d-block d-sm-none mx-auto">
+                        <h6 class="welcome-subtext">Welcome to my personal portfolio</h6>
+                    </div>
+                    <div class="d-none d-sm-block d-md-none mx-auto">
+                        <h5 class="welcome-subtext">Welcome to my personal portfolio</h5>
+                    </div>
+                    <div class="d-none d-md-block mx-auto">
+                        <h3 class="welcome-subtext">Welcome to my personal portfolio</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Me Section -->
+        <div class="about-me">
+            <div class="container-fluid">
+                <div class="row mx-auto">
+                    <div class="col-3 d-none d-md-block img-container">
+                        <img src="images/old-solo.jpg" class="img-fluid img-thumbnail about-image shift-left" alt="A very old pic">
+                        <img src="images/old-group.jpg" class="img-fluid img-thumbnail about-image shift-right shift-top" alt="A very old pic">
+                    </div>
+
+                    <div class="col-10 offset-1 d-block d-sm-none img-container" id="img-container-small">
+                        <img src="images/old-solo.jpg" class="img-fluid img-thumbnail about-image-small shift-left" alt="A very old pic">
+                        <img src="images/old-group.jpg" class="img-fluid img-thumbnail about-image-small shift-right shift-top" id="img-small" alt="A very old pic">
+                    </div>
+                    
+                    <div class="col-8 offset-2 d-none d-sm-block d-md-none img-container" id="img-container-mid">
+                        <img src="images/old-solo.jpg" class="img-fluid img-thumbnail about-image-small shift-left" alt="A very old pic">
+                        <img src="images/old-group.jpg" class="img-fluid img-thumbnail about-image-small shift-right shift-top" id="img-small" alt="A very old pic">
+                    </div>
+                    
+                    <div class="col-md-6 d-none d-md-block mx-auto">
+                        <div class="card">
+                            <h3 class="card-header">A Short Bio</h3>
+                            <div class="card-body">
+                                <dl class="row align-items-center">
+                                    <dt class="col-2">
+                                        <i class="fas fa-book-reader icon"></i>
+                                    </dt>
+                                    
+                                    <div class="col-10">
+                                        <div class="row align-items-center">
+                                            <dt class="col-3 about-header">10<sup>th</sup></dt>
+                                            <dd class="col-9 about-header">O.P. Jindal School, Raigarh</dd>
+                                            
+                                            <dt class="col-3 about-header">12<sup>th</sup></dt>
+                                            <dd class="col-9 about-header">Sri Chaitanya, Hyderabad</dd>
+                                            
+                                            <dt class="col-3">
+                                                <i class="fa fa-graduation-cap icon"></i>
+                                            </dt>
+                                            <dd class="col-9 about-header">Indian Institute of Technology, Kharagpur</dd>
+                                        </div>
+                                    </div>
+                                    
+                                    <dt class="col-2">
+                                        <i class="fas fa-map-marker-alt icon"></i>
+                                    </dt>
+                                    <dd class="col-10 about-header">Angul, Odisha</dd>
+                                    
+                                    <dt class="col-2">
+                                        <i class="fas fa-info-circle icon"></i>
+                                    </dt>
+                                    <dd class="col-10 about-header">Potterhead, Cricket Fan, Squash Player</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <p class="bio-text">Click on the bio tab for full bio</p>
+                    </div>
+                    
+                    <div class="col-12 d-block d-md-none mx-auto">
+                        <div class="card" id="card-small">
+                            <h3 class="card-header">A Short Bio</h3>
+                            <div class="card-body">
+                                <dl class="row align-items-center">
+                                    <dt class="col-2">
+                                        <i class="fas fa-book-reader icon"></i>
+                                    </dt>
+                                    
+                                    <div class="col-10">
+                                        <div class="row align-items-center">
+                                            <dt class="col-4 about-header">10<sup>th</sup></dt>
+                                            <dd class="col-8 about-header">O.P. Jindal School, Raigarh</dd>
+                                            
+                                            <dt class="col-4 about-header">12<sup>th</sup></dt>
+                                            <dd class="col-8 about-header">Sri Chaitanya, Hyderabad</dd>
+                                            
+                                            <dt class="col-4">
+                                                <i class="fa fa-graduation-cap icon"></i>
+                                            </dt>
+                                            <dd class="col-8 about-header">Indian Institute of Technology, Kharagpur</dd>
+                                        </div>
+                                    </div>
+                                    
+                                    <dt class="col-2">
+                                        <i class="fas fa-map-marker-alt icon"></i>
+                                    </dt>
+                                    <dd class="col-10 about-header">Angul, Odisha</dd>
+                                    
+                                    <dt class="col-2">
+                                        <i class="fas fa-info-circle icon"></i>
+                                    </dt>
+                                    <dd class="col-10 about-header">Potterhead, Cricket Fan, Squash Player</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <p class="bio-text">Click on the bio tab for full bio</p>
+                    </div>
+                    
+                    <div class="col-3 d-none d-md-block img-container">
+                        <img src="images/new-solo.jpg" class="img-fluid img-thumbnail about-image shift-right" alt="A fairly new pic">
+                        <img src="images/new-group.jpg" class="img-fluid img-thumbnail about-image shift-left shift-top" alt="A fairly new pic">
+                    </div>
+                    
+                    <div class="col-10 offset-1 d-block d-sm-none img-container" id="img-container-small">
+                        <img src="images/new-solo.jpg" class="img-fluid img-thumbnail about-image-small shift-left" alt="A fairly new pic">
+                        <img src="images/new-group.jpg" class="img-fluid img-thumbnail about-image-small shift-right shift-top" id="img-small" alt="A fairly new pic">
+                    </div>
+                    
+                    <div class="col-8 offset-2 d-none d-sm-block d-md-none img-container" id="img-container-mid">
+                        <img src="images/new-solo.jpg" class="img-fluid img-thumbnail about-image-small shift-left" alt="A fairly new pic">
+                        <img src="images/new-group.jpg" class="img-fluid img-thumbnail about-image-small shift-right shift-top" id="img-small" alt="A fairly new pic">
+                    </div>
+                </div>             
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="projects">
+            <div class="container-fluid" id="project-container">
+                <div class="row mx-auto align-items-center">
+                    <div class="col-12 d-block d-sm-none">
+                        <h1 class="project-heading">Projects</h1>
+                        <p class="project-subheading">Here are some of my projects. For a full description, click on the projects tab.</p>
+                    </div>
+                    
+                    <div class="col-sm-6 d-none d-sm-block">
+                        <div class="row mx-auto project-heading justify-content-center">
+                            <h1>Projects</h1>
+                        </div>
+                        
+                        <div class="row mx-auto justify-content-center">
+                            <p class="project-subheading">Here are some of my projects. For a full description, click on the projects tab.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="d-none d-sm-block">
+                                <div class="col-12" id="project-1">
+                                    <h5 class="project-short-title">Automation of test cases for a web application</h5>
+                                </div>
+                                
+                                <div class="col-12" id="project-2">
+                                    <h5 class="project-short-title">Automation of daily checks for a package</h5>
+                                </div>
+                                
+                                <div class="col-12" id="project-3">
+                                    <h5 class="project-short-title">Dynamics and optimization of conventional distillation columns</h5>
+                                </div>
+                                
+                                <div class="col-12" id="project-4">
+                                    <h5 class="project-short-title">Multi-objective optimization of dividing wall columns</h5>
+                                </div>
+                            </div>
+                            <div class="d-block d-sm-none">
+                                <div class="col-12" id="project-1">
+                                    <p class="project-short-title">Automation of test cases for a web application</p>
+                                </div>
+                                
+                                <div class="col-12" id="project-2">
+                                    <p class="project-short-title">Automation of daily checks for a package</p>
+                                </div>
+                                
+                                <div class="col-12" id="project-3">
+                                    <p class="project-short-title">Dynamics and optimization of conventional distillation columns</p>
+                                </div>
+                                
+                                <div class="col-12" id="project-4">
+                                    <p class="project-short-title">Multi-objective optimization of dividing wall columns</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hobbies Section -->
+        <div class="hobbies">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-12 d-block d-md-none">
+                        <h1 class="hobby-heading">Hobbies</h1>
+                        <p class="hobby-subheading">Here are some of the things that I love to do in my free time</p>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-6 my-1 my-md-3">
+                                <img src="images/hobby-1.jpg" class="img-fluid img-thumbnail hobby-image" alt="I love to paint on walls">
+                            </div>
+                            
+                            <div class="col-6 my-1 my-md-3">
+                                <img src="images/hobby-2.jpg" class="img-fluid img-thumbnail hobby-image" alt="I am a Potterhead">
+                            </div>
+                            
+                            <div class="col-6 my-1 my-md-3">
+                                <img src="images/hobby-3.jpg" class="img-fluid img-thumbnail hobby-image" alt="Squash is my favorite game">
+                            </div>
+                            
+                            <div class="col-6 my-1 my-md-3">
+                                <img src="images/hobby-4.jpg" class="img-fluid img-thumbnail hobby-image" alt="I love Tom and Jerry">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 d-none d-md-block">
+                        <h1 class="hobby-heading">Hobbies</h1>
+                        <p class="hobby-subheading">Here are some of the things that I love to do in my free time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-sm-6">
+                        <h5 class="footer-heading">Links</h5>
+                        <ul class="footer-bullets">
+                            <li><a href="about.html"  class="footer-link">Bio</a></li>
+                            <li><a href="projects.html" class="footer-link">Projects</a></li>
+                            <li><a href="hobbies.html" class="footer-link">Hobbies</a></li>
+                            <li><a href="contact.html" class="footer-link">Leave a Review</a></li>
+                        </ul>    
+                    </div>
+
+                    <div class="col-8 col-sm-6">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="footer-heading">Contact</h5>
+                            </div>
+                            
+                            <div class="col-8 col-sm-2">
+                                <i class="fas fa-map-marker-alt icon"></i>
+                            </div>
+                            
+                            <div class="col-12 col-sm-10">
+                                <h6 class="footer-text">
+                                    Qtr. No. D-30/2 <br>
+                                    Jindal nagar Colony, JSPL <br>
+                                    Angul, Odisha <br>
+                                </h6>
+                            </div>
+
+                            <div class="col-8 col-sm-2">
+                                <i class="fas fa-envelope icon"></i>
+                            </div>
+                            
+                            <div class="col-12 col-sm-10 d-block d-md-none" style="overflow-x: scroll;">
+                                <h6 class="footer-text">
+                                    shubhamraj465@gmail.com
+                                </h6>
+                            </div>
+
+                            <div class="col-12 col-sm-10 d-none d-md-block">
+                                <h6 class="footer-text">
+                                    shubhamraj465@gmail.com
+                                </h6>
+                            </div>
+                            
+                            <div class="col-8 col-sm-2">
+                                <i class="fas fa-phone-alt icon"></i>
+                            </div>
+                            
+                            <div class="col-12 col-sm-10">
+                                <h6 class="footer-text">
+                                    +91-7674045435
+                                </h6>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+        <!-- Linking the required javascript files -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="javascript/alignment.js"></script>
+        <script src="javascript/changeTheme.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", loadTheme());
+            document.addEventListener("DOMContentLoaded", alignIcons());
+        </script>
+    </body>
+</html>
